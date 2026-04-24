@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Home() {
   return (
     <main>
@@ -10,7 +12,7 @@ export default function Home() {
               Linkuild partners with ambitious SaaS, eCommerce, and B2B brands to engineer editorial placements on the publications your buyers trust. Every placement is researched, pitched, and tracked by senior strategists.
             </p>
             <div className="hero-buttons">
-              <a href="#contact" className="btn btn-primary">Get a custom proposal</a>
+              <Link href="/contact" className="btn btn-primary">Get a custom proposal</Link>
               <a href="#wins" className="btn btn-secondary">See our latest wins</a>
             </div>
           </div>
@@ -21,7 +23,7 @@ export default function Home() {
       <section id="services" className="section">
         <div className="container">
           <h2 style={{ textAlign: 'center' }}>Our <span className="text-gradient">Services</span></h2>
-          <p style={{ textAlign: 'center', color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto' }}>
+          <p className="section-subtitle">
             Our strategists orchestrate every step—from prospecting narratives that resonate with journalists to managing analytics that prove the SEO impact.
           </p>
           
@@ -55,7 +57,7 @@ export default function Home() {
               <ul>
                 <li>Selective guest feature program</li>
                 <li>Contextual, high-authority backlinks</li>
-                <li>Performance dashboards</li>
+                <li>Performance dashboards & insights</li>
               </ul>
             </div>
           </div>
@@ -66,22 +68,22 @@ export default function Home() {
       <section id="wins" className="section wins-section">
         <div className="container">
           <h2>Proof that premium links unlock <span className="text-gradient">outsized growth.</span></h2>
-          <p style={{ color: 'var(--text-secondary)', marginBottom: '3rem', maxWidth: '600px' }}>
+          <p className="section-desc">
             Recent campaigns show how a relentless focus on quality placements can transform visibility and lead generation.
           </p>
           
           <div className="grid-3">
             <div className="stat-card glass">
               <div className="stat-number text-gradient">+450%</div>
-              <div className="stat-desc">Organic sessions in 6 months for a fintech platform after 35 authority links.</div>
+              <div className="stat-desc">Organic sessions in 6 months for a fintech platform after 35 authority links on tier-1 finance outlets.</div>
             </div>
             <div className="stat-card glass">
               <div className="stat-number text-gradient">90 Days</div>
-              <div className="stat-desc">To secure editorial features for a Series B SaaS (TechCrunch, VentureBeat).</div>
+              <div className="stat-desc">Editorial features secured for a Series B SaaS, including TechCrunch, VentureBeat, and Yahoo Finance.</div>
             </div>
             <div className="stat-card glass">
               <div className="stat-number text-gradient">3.2x</div>
-              <div className="stat-desc">ROI on outreach investment for an eCommerce aggregator.</div>
+              <div className="stat-desc">ROI on outreach investment for an eCommerce aggregator through high-intent affiliate partnerships.</div>
             </div>
           </div>
         </div>
@@ -90,14 +92,12 @@ export default function Home() {
       {/* Blueprint Process Section */}
       <section id="process" className="section">
         <div className="container">
-          <div className="grid-2">
-            <div>
-              <h2>The Linkuild <span className="text-gradient">Blueprint</span></h2>
-              <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
-                Transparent, senior-led, performance obsessed. We meet you at your growth stage and assemble a pod of specialists to deliver work that your competitors struggle to replicate.
-              </p>
-            </div>
-            
+          <h2 style={{ textAlign: 'center', marginBottom: '1rem' }}>The Linkuild <span className="text-gradient">Blueprint</span></h2>
+          <p className="section-subtitle">
+            Transparent, senior-led, performance obsessed. We meet you at your growth stage and assemble a pod of specialists to deliver work that your competitors struggle to replicate.
+          </p>
+
+          <div className="grid-2" style={{ marginTop: '4rem' }}>
             <div>
               <div className="process-step">
                 <div className="step-number">01</div>
@@ -114,7 +114,9 @@ export default function Home() {
                   <p>Our team develops data studies, commentary, and media kits, then streamlines approvals so we can launch at pace.</p>
                 </div>
               </div>
-              
+            </div>
+
+            <div>
               <div className="process-step">
                 <div className="step-number">03</div>
                 <div className="step-content">
@@ -136,32 +138,37 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="section" style={{ background: 'var(--bg-color)' }}>
+      <section id="testimonials" className="section wins-section">
         <div className="container">
           <h2 style={{ textAlign: 'center', marginBottom: '1.5rem' }}>Growth teams trust Linkuild to turn coverage into <span className="text-gradient">compounding SEO wins.</span></h2>
-          <p style={{ textAlign: 'center', color: 'var(--text-secondary)', maxWidth: '700px', margin: '0 auto 3rem auto' }}>
+          <p className="section-subtitle">
             Hear from marketing leaders who rely on our senior-led outreach, thoughtful storytelling, and transparent performance reporting.
           </p>
           
           <div className="testimonial-grid">
             <div className="testimonial-card glass">
-              <p>Linkuild helped us earn coverage on publications we'd chased for years. Within three months they turned backlinks into real revenue impact.</p>
+              <p>&ldquo;Linkuild helped us earn coverage on publications we'd chased for years. Within three months they turned backlinks into real revenue impact.&rdquo;</p>
               <div className="testimonial-author">— Marketing Leader</div>
             </div>
             
             <div className="testimonial-card glass">
-              <p>The Linkuild team plugged directly into our workflows and tripled qualified coverage in a single quarter without sacrificing brand voice or compliance.</p>
+              <p>&ldquo;The Linkuild team plugged directly into our workflows and tripled qualified coverage in a single quarter without sacrificing brand voice or compliance.&rdquo;</p>
               <div className="testimonial-author">— Growth VP</div>
             </div>
             
             <div className="testimonial-card glass">
-              <p>They don't just pitch—Linkuild surfaces narratives editors actually want. Our fintech thought leadership now shows up in every major industry roundup.</p>
+              <p>&ldquo;They don't just pitch—Linkuild surfaces narratives editors actually want. Our fintech thought leadership now shows up in every major industry roundup.&rdquo;</p>
               <div className="testimonial-author">— Fintech Director</div>
             </div>
             
             <div className="testimonial-card glass">
-              <p>From the first sprint we had weekly visibility, airtight reporting, and placements that moved revenue. Linkuild is the partner we lean on for every launch.</p>
+              <p>&ldquo;From the first sprint we had weekly visibility, airtight reporting, and placements that moved revenue. Linkuild is the partner we lean on for every launch.&rdquo;</p>
               <div className="testimonial-author">— SaaS Founder</div>
+            </div>
+
+            <div className="testimonial-card glass">
+              <p>&ldquo;My website got ranked on the first page after getting 10 backlinks from Linkuild and many more from others.&rdquo;</p>
+              <div className="testimonial-author">— Website Owner</div>
             </div>
           </div>
         </div>
@@ -171,37 +178,15 @@ export default function Home() {
       <section id="contact" className="section" style={{ textAlign: 'center' }}>
         <div className="container glass cta-container">
           <h2>Ready to make your authority <span className="text-gradient">undeniable?</span></h2>
-          <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 2.5rem auto' }}>
+          <p className="section-subtitle" style={{ marginBottom: '2.5rem' }}>
             Tell us what you need amplified and we'll craft a roadmap that compounds rankings, brand trust, and pipeline.
           </p>
           <div className="hero-buttons">
             <a href="mailto:info@linkuild.com" className="btn btn-primary">Start a project</a>
-            <a href="#" className="btn btn-secondary">Book a strategy call</a>
+            <Link href="/contact" className="btn btn-secondary">Book a quick audit</Link>
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="footer">
-        <div className="container">
-          <div className="footer-content">
-            <div className="logo">
-              <span className="text-gradient">Linkuild</span>
-            </div>
-            <div className="footer-links">
-              <a href="#">Home</a>
-              <a href="#services">Services</a>
-              <a href="#wins">Wins</a>
-              <a href="#process">Process</a>
-              <a href="#contact">Contact</a>
-              <a href="https://wa.me/447938434039?text=Hi%20Linkuild!%20I%27d%20love%20to%20talk%20about%20your%20link%20building%20services." target="_blank" rel="noreferrer">📞 WhatsApp</a>
-            </div>
-            <div style={{ color: 'var(--text-secondary)' }}>
-              © {new Date().getFullYear()} Linkuild Clone. All rights reserved.
-            </div>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 }
