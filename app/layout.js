@@ -1,4 +1,5 @@
 import './globals.css'
+import ThemeToggle from './ThemeToggle'
 
 export const metadata = {
   title: 'Linkuild | Premium Editorial PR & Link Building',
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
               <a href="#wins">Wins</a>
               <a href="#process">Process</a>
               <a href="#contact" className="btn btn-primary" style={{ padding: '0.5rem 1.5rem' }}>Get Proposal</a>
+              <ThemeToggle />
             </div>
           </div>
         </nav>
