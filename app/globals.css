@@ -12,11 +12,11 @@
   --nav-bg: rgba(255, 255, 255, 0.85);
   --h1-start: #111827;
   --h1-end: #4f46e5;
-  --quote-mark: rgba(0,0,0,0.05);
+  --quote-mark: rgba(0,0,0,0.15);
   --hero-glow: rgba(37, 99, 235, 0.1);
   --wins-bg: rgba(0,0,0,0.02);
   --cta-bg: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
-  --step-num-border: rgba(0,0,0,0.1);
+  --step-num-border: rgba(0,0,0,0.3);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -152,13 +152,13 @@ h3 {
 
 .btn-secondary {
   background: transparent;
-  color: white;
+  color: var(--text-primary);
   border: 1px solid var(--glass-border);
 }
 
 .btn-secondary:hover {
   background: var(--glass-bg);
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: var(--accent-primary);
 }
 
 /* Navbar */
