@@ -1,20 +1,20 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Extra Services | Linkuild',
-  description: 'Expand your growth stack with local SEO, technical SEO, web development, and Google Ads services from Linkuild.',
+  title: 'Extra Services | Zonii Leads',
+  description: 'Expand your growth stack with local SEO, technical SEO, web development, and Google Ads services from Zonii Leads.',
 }
 
 export default function ExtraServicesPage() {
   return (
-    <main>
+    <main id="main">
       {/* Hero */}
       <section className="page-hero">
         <div className="container">
           <div className="hero-content">
             <h1>Expand your <span className="text-gradient">growth stack.</span></h1>
             <p className="hero-subtitle">
-              Beyond link building, Linkuild operates specialist pods that strengthen every part of your performance engine—from local visibility to conversion-ready landing pages and paid demand.
+              Beyond link building, Zonii Leads operates specialist pods that strengthen every part of your performance engine—from local visibility to conversion-ready landing pages and paid demand.
             </p>
             <div className="hero-buttons">
               <Link href="/contact" className="btn btn-primary">Plan a custom bundle</Link>
@@ -85,7 +85,7 @@ export default function ExtraServicesPage() {
         <div className="container">
           <h2 style={{ textAlign: 'center' }}>Integrated execution, <span className="text-gradient">shared intelligence.</span></h2>
           <p className="section-subtitle">
-            No silos—every extra service squad syncs with your Linkuild account strategist to share insights, assets, and campaign data.
+            No silos—every extra service squad syncs with your Zonii Leads account strategist to share insights, assets, and campaign data.
           </p>
 
           <div className="grid-2" style={{ marginTop: '3rem' }}>
@@ -107,7 +107,7 @@ export default function ExtraServicesPage() {
             <div className="card glass">
               <div className="card-icon">🧪</div>
               <h3>Quarterly Innovation Sprints</h3>
-              <p>Experimentation roadmap led by Linkuild strategists to test new channels, betas, and automation.</p>
+              <p>Experimentation roadmap led by Zonii Leads strategists to test new channels, betas, and automation.</p>
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@ export default function ExtraServicesPage() {
           </p>
           <div className="hero-buttons">
             <Link href="/contact" className="btn btn-primary">Build my bundle</Link>
-            <a href="mailto:info@linkuild.com" className="btn btn-secondary">Email a strategist</a>
+            <a href="mailto:info@zoniileads.com" className="btn btn-secondary">Email a strategist</a>
           </div>
         </div>
       </section>

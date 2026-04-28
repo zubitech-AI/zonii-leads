@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Services | Linkuild',
-  description: 'Explore how Linkuild blends digital PR, data journalism, and authority partnerships to deliver compounding organic growth.',
+  title: 'Services | Zonii Leads',
+  description: 'Explore how Zonii Leads blends digital PR, data journalism, and authority partnerships to deliver compounding organic growth.',
 }
 
 export default function ServicesPage() {
   return (
-    <main>
+    <main id="main">
       {/* Hero */}
       <section className="page-hero">
         <div className="container">
@@ -111,7 +111,7 @@ export default function ServicesPage() {
       {/* Why Us */}
       <section className="section">
         <div className="container">
-          <h2 style={{ textAlign: 'center' }}>Why teams <span className="text-gradient">choose Linkuild</span></h2>
+          <h2 style={{ textAlign: 'center' }}>Why teams <span className="text-gradient">choose Zonii Leads</span></h2>
           <div className="grid-2" style={{ marginTop: '3rem' }}>
             <div className="card glass">
               <h3>Embedded Delivery</h3>
@@ -164,7 +164,7 @@ export default function ServicesPage() {
           <h2>Let's identify the placements that will <span className="text-gradient">move the needle</span> fastest.</h2>
           <div className="hero-buttons" style={{ marginTop: '2rem' }}>
             <Link href="/contact" className="btn btn-primary">Book a consultation</Link>
-            <a href="mailto:info@linkuild.com" className="btn btn-secondary">Email our team</a>
+            <a href="mailto:info@zoniileads.com" className="btn btn-secondary">Email our team</a>
           </div>
         </div>
       </section>

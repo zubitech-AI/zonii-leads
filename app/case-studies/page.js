@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Case Studies | Linkuild',
-  description: 'See how Linkuild turns strategic backlinks into measurable pipeline.',
+  title: 'Case Studies | Zonii Leads',
+  description: 'See how Zonii Leads turns strategic backlinks into measurable pipeline.',
 }
 
 export default function CaseStudiesPage() {
   return (
-    <main>
+    <main id="main">
       <section className="page-hero">
         <div className="container">
           <div className="hero-content">
@@ -46,7 +46,7 @@ export default function CaseStudiesPage() {
             </div>
             <div className="stat-card glass">
               <div className="stat-number text-gradient">4.1x</div>
-              <div className="stat-desc">Median return on outreach investment managed by Linkuild.</div>
+              <div className="stat-desc">Median return on outreach investment managed by Zonii Leads.</div>
               <ul style={{ textAlign: 'left', marginTop: '1.5rem' }}>
                 <li>Attribution modeling connected to pipeline</li>
                 <li>Link velocity dashboards refreshed daily</li>
@@ -105,7 +105,7 @@ export default function CaseStudiesPage() {
           <div className="grid-3" style={{ marginTop: '3rem' }}>
             <div className="card glass"><div className="case-tag">Challenge</div><h3>Outranking incumbents</h3><p>GreenGrid launched a marketplace for commercial solar but struggled to outrank incumbents with larger PR teams.</p></div>
             <div className="card glass"><div className="case-tag">Solution</div><h3>Data-driven outreach</h3><p>We built an insights report on solar retrofit ROI, combining proprietary data with expert commentary.</p></div>
-            <div className="card glass"><div className="case-tag">Delivery</div><h3>Cross-vertical coverage</h3><p>Linkuild handled asset production, media pitching, and partnerships with renewable energy publications.</p></div>
+            <div className="card glass"><div className="case-tag">Delivery</div><h3>Cross-vertical coverage</h3><p>Zonii Leads handled asset production, media pitching, and partnerships with renewable energy publications.</p></div>
           </div>
           <div className="grid-3" style={{ marginTop: '2rem' }}>
             <div className="stat-card glass"><div className="stat-number text-gradient">85+</div><div className="stat-desc">Editorial backlinks across energy, finance, and sustainability outlets.</div></div>
@@ -121,7 +121,7 @@ export default function CaseStudiesPage() {
           <p className="section-subtitle" style={{ marginBottom: '2rem' }}>We'll walk you through the outreach narratives, assets, and partnership channels that drove these results.</p>
           <div className="hero-buttons">
             <Link href="/contact" className="btn btn-primary">Book a consultation</Link>
-            <a href="mailto:info@linkuild.com" className="btn btn-secondary">Email our analysts</a>
+            <a href="mailto:info@zoniileads.com" className="btn btn-secondary">Email our analysts</a>
           </div>
         </div>
       </section>

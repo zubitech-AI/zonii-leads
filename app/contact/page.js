@@ -13,7 +13,7 @@ export default function ContactPage() {
   }
 
   return (
-    <main>
+    <main id="main">
       <section className="page-hero">
         <div className="container">
           <div className="hero-content">
@@ -29,8 +29,8 @@ export default function ContactPage() {
             <div className="card glass" style={{ textAlign: 'center' }}>
               <div className="card-icon" style={{ margin: '0 auto 1rem auto' }}>✉️</div>
               <h3>Email Us</h3>
-              <p>info@linkuild.com</p>
-              <a href="mailto:info@linkuild.com" className="btn btn-primary" style={{ marginTop: '1rem' }}>Send an email</a>
+              <p>info@zoniileads.com</p>
+              <a href="mailto:info@zoniileads.com" className="btn btn-primary" style={{ marginTop: '1rem' }}>Send an email</a>
             </div>
             <div className="card glass" style={{ textAlign: 'center' }}>
               <div className="card-icon" style={{ margin: '0 auto 1rem auto' }}>📅</div>
@@ -40,9 +40,12 @@ export default function ContactPage() {
             </div>
             <div className="card glass" style={{ textAlign: 'center' }}>
               <div className="card-icon" style={{ margin: '0 auto 1rem auto' }}>🤝</div>
-              <h3>Partnerships</h3>
-              <p>Collaborations, interviews, or co-marketing opportunities.</p>
-              <a href="mailto:info@linkuild.com" className="btn btn-secondary" style={{ marginTop: '1rem' }}>info@linkuild.com</a>
+              <h3>Connect With Us</h3>
+              <p>Follow Zonii Leads on Facebook or connect with Saqlain on LinkedIn.</p>
+              <div className="hero-buttons" style={{ justifyContent: 'center', marginTop: '1rem' }}>
+                <a href="https://www.facebook.com/DxbSqlnch0" target="_blank" rel="noreferrer" className="btn btn-secondary">Facebook</a>
+                <a href="https://www.linkedin.com/in/dxbsaqlain405?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" className="btn btn-secondary">LinkedIn</a>
+              </div>
             </div>
           </div>
 
@@ -107,7 +110,7 @@ export default function ContactPage() {
           <p className="section-subtitle" style={{ marginBottom: '2rem' }}>If none of our standard engagements fit, tell us what success looks like and we'll architect a bespoke sprint.</p>
           <div className="hero-buttons">
             <a href="https://calendly.com/" target="_blank" rel="noreferrer" className="btn btn-primary">Plan a workshop</a>
-            <a href="mailto:info@linkuild.com" className="btn btn-secondary">Email a strategist</a>
+            <a href="mailto:info@zoniileads.com" className="btn btn-secondary">Email a strategist</a>
           </div>
         </div>
       </section>
