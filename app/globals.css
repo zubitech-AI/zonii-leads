@@ -386,6 +386,61 @@ h3 {
   justify-content: center;
 }
 
+/* Hero highlight strip */
+.hero-highlights {
+  padding: 0 0 3rem 0;
+}
+
+.hero-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.hero-highlight-card {
+  padding: 1.5rem;
+}
+
+.hero-highlight-number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.hero-highlight-card p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.publisher-strip {
+  margin-top: 1.75rem;
+}
+
+.publisher-label {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.publisher-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.publisher-pill {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  background: var(--glass-bg);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 /* Grid Layouts */
 .grid-3 {
   display: grid;
@@ -599,6 +654,63 @@ h3 {
   font-family: serif;
 }
 
+.testimonial-highlight {
+  margin-top: 3rem;
+  padding: 2.25rem;
+  max-width: 860px;
+}
+
+.testimonial-highlight p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.testimonial-role {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  margin-top: 0.25rem;
+}
+
+.testimonial-meta {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonial-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.testimonial-arrow {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid var(--glass-border);
+  background: transparent;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.testimonial-dots {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--text-secondary) 50%, transparent);
+}
+
+.dot.active {
+  background: var(--accent-primary);
+}
+
 @media (max-width: 768px) {
   .desktop-nav {
     display: none;
@@ -616,6 +728,10 @@ h3 {
     flex-direction: column;
   }
 
+  .hero-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr;
     padding: 1.5rem;
@@ -629,6 +745,11 @@ h3 {
 
   .footer-bottom-links {
     justify-content: center;
+  }
+
+  .testimonial-meta {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 

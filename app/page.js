@@ -19,6 +19,38 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Hero Highlights */}
+      <section className="hero-highlights">
+        <div className="container">
+          <div className="hero-highlight-grid">
+            <div className="hero-highlight-card glass">
+              <div className="hero-highlight-number">2.8M+</div>
+              <p>Estimated monthly traffic driven from Zonii Leads placements.</p>
+            </div>
+            <div className="hero-highlight-card glass">
+              <div className="hero-highlight-number">310%</div>
+              <p>Average 12-month organic growth for retained clients.</p>
+            </div>
+            <div className="hero-highlight-card glass">
+              <div className="hero-highlight-number">120+</div>
+              <p>Earned links on tier-1 tech, finance, and marketing publications.</p>
+            </div>
+          </div>
+
+          <div className="publisher-strip">
+            <div className="publisher-label">Brands & publishers featuring our work</div>
+            <div className="publisher-list">
+              <span className="publisher-pill">TechCrunch</span>
+              <span className="publisher-pill">Shopify</span>
+              <span className="publisher-pill">Forbes</span>
+              <span className="publisher-pill">HubSpot</span>
+              <span className="publisher-pill">Semrush</span>
+              <span className="publisher-pill">Entrepreneur</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="section">
         <div className="container">
@@ -144,31 +176,22 @@ export default function Home() {
           <p className="section-subtitle">
             Hear from marketing leaders who rely on our senior-led outreach, thoughtful storytelling, and transparent performance reporting.
           </p>
-          
-          <div className="testimonial-grid">
-            <div className="testimonial-card glass">
-              <p>&ldquo;Zonii Leads helped us earn coverage on publications we'd chased for years. Within three months they turned backlinks into real revenue impact.&rdquo;</p>
-              <div className="testimonial-author">— Marketing Leader</div>
-            </div>
-            
-            <div className="testimonial-card glass">
-              <p>&ldquo;The Zonii Leads team plugged directly into our workflows and tripled qualified coverage in a single quarter without sacrificing brand voice or compliance.&rdquo;</p>
-              <div className="testimonial-author">— Growth VP</div>
-            </div>
-            
-            <div className="testimonial-card glass">
-              <p>&ldquo;They don't just pitch—Zonii Leads surfaces narratives editors actually want. Our fintech thought leadership now shows up in every major industry roundup.&rdquo;</p>
-              <div className="testimonial-author">— Fintech Director</div>
-            </div>
-            
-            <div className="testimonial-card glass">
-              <p>&ldquo;From the first sprint we had weekly visibility, airtight reporting, and placements that moved revenue. Zonii Leads is the partner we lean on for every launch.&rdquo;</p>
-              <div className="testimonial-author">— SaaS Founder</div>
-            </div>
 
-            <div className="testimonial-card glass">
-              <p>&ldquo;My website got ranked on the first page after getting 10 backlinks from Zonii Leads and many more from others.&rdquo;</p>
-              <div className="testimonial-author">— Website Owner</div>
+          <div className="testimonial-highlight glass">
+            <p>&ldquo;My website got ranked on the first page after getting 10 backlinks from Zonii Leads and many more from others.&rdquo;</p>
+            <div className="testimonial-author">Daniel Adams</div>
+            <div className="testimonial-role">Founder @ RankReady Labs</div>
+            <div className="testimonial-meta">
+              <div className="testimonial-controls">
+                <button type="button" className="testimonial-arrow" aria-label="Previous testimonial">←</button>
+                <button type="button" className="testimonial-arrow" aria-label="Next testimonial">→</button>
+              </div>
+              <div className="testimonial-dots" aria-hidden="true">
+                <span className="dot" />
+                <span className="dot" />
+                <span className="dot" />
+                <span className="dot active" />
+              </div>
             </div>
           </div>
         </div>
