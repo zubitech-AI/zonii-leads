@@ -5,6 +5,11 @@ import Navbar from './Navbar'
 export const metadata = {
   title: 'Zonii Leads | Premium Editorial PR & Link Building',
   description: 'Zonii Leads partners with ambitious brands to engineer editorial placements on the publications your buyers trust.',
+  icons: {
+    icon: '/zonii-logo.png',
+    shortcut: '/zonii-logo.png',
+    apple: '/zonii-logo.png',
+  },
 }
 
 export default function RootLayout({ children }) {
