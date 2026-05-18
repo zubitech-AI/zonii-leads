@@ -25,26 +25,47 @@ export default function ContactPage() {
 
       <section className="section">
         <div className="container">
-          <div className="grid-3" style={{ marginBottom: '4rem' }}>
-            <div className="card glass" style={{ textAlign: 'center' }}>
-              <div className="card-icon" style={{ margin: '0 auto 1rem auto' }}>✉️</div>
-              <h3>Email Us</h3>
-              <p>info@zoniileads.com</p>
-              <a href="mailto:info@zoniileads.com" className="btn btn-primary" style={{ marginTop: '1rem' }}>Send an email</a>
+          <div className="grid-4" style={{ marginBottom: '4rem' }}>
+            <div className="card glass" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <div className="card-icon" style={{ margin: '0 auto 1rem auto' }}>✉️</div>
+                <h3>Email Us</h3>
+                <p style={{ margin: '1rem 0' }}>info@zoniileads.com</p>
+              </div>
+              <a href="mailto:info@zoniileads.com" className="btn btn-primary" style={{ marginTop: 'auto' }}>Send an email</a>
             </div>
-            <div className="card glass" style={{ textAlign: 'center' }}>
-              <div className="card-icon" style={{ margin: '0 auto 1rem auto' }}>📅</div>
-              <h3>Schedule a Call</h3>
-              <p>Grab time on our calendar to review your goals and see if we're the right fit.</p>
-              <a href="https://calendly.com/" target="_blank" rel="noreferrer" className="btn btn-primary" style={{ marginTop: '1rem' }}>Schedule now</a>
+
+            <div className="card glass" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <div className="card-icon" style={{ margin: '0 auto 1rem auto', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" style={{ color: '#25D366' }}>
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.767 5.766 0 1.267.407 2.454 1.134 3.424l-.741 2.709 2.78-.728c.937.609 2.046.961 3.238.961 3.18 0 5.766-2.586 5.766-5.766s-2.586-5.766-5.766-5.766zm3.326 8.21c-.137.387-.704.707-1.014.757-.272.043-.618.069-1.02-.061-.252-.08-.57-.2-.969-.371-1.698-.732-2.772-2.479-2.857-2.593-.085-.114-.69-.918-.69-1.75 0-.832.435-1.242.59-1.41.15-.168.33-.21.44-.21.11 0 .22 0 .31.004.1.005.23-.039.36.27.135.322.46 1.12.5 1.21.04.09.07.195.01.31-.06.115-.09.185-.18.29-.09.105-.19.235-.27.315-.09.09-.185.19-.08.37.105.18.47.775 1.01 1.258.697.62 1.284.812 1.464.9.18.09.285.075.39-.045.105-.12.45-.525.57-.705.12-.18.24-.15.4-.09.165.06 1.045.495 1.225.585.18.09.3.135.345.21.045.075.045.435-.092.822zM12 2C6.477 2 2 6.477 2 12c0 1.954.562 3.778 1.53 5.32L2.03 22l4.83-.1.1.03C8.42 22.86 10.15 23.3 12 23.3c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 19.3c-1.66 0-3.2-.45-4.52-1.24l-.32-.2-2.85.07.76-2.78-.22-.35A8.25 8.25 0 013.7 12c0-4.58 3.72-8.3 8.3-8.3 4.58 0 8.3 3.72 8.3 8.3 0 4.58-3.72 8.3-8.3 8.3z"/>
+                  </svg>
+                </div>
+                <h3>WhatsApp Chat</h3>
+                <p style={{ margin: '1rem 0' }}>+44 7458 979941</p>
+              </div>
+              <a href="https://wa.me/447458979941" target="_blank" rel="noreferrer" className="btn btn-primary" style={{ marginTop: 'auto', background: '#25D366', boxShadow: '0 4px 14px rgba(37, 211, 102, 0.3)' }}>Chat now</a>
             </div>
-            <div className="card glass" style={{ textAlign: 'center' }}>
-              <div className="card-icon" style={{ margin: '0 auto 1rem auto' }}>🤝</div>
-              <h3>Connect With Us</h3>
-              <p>Follow Zonii Leads on Facebook or connect with Saqlain on LinkedIn.</p>
-              <div className="hero-buttons" style={{ justifyContent: 'center', marginTop: '1rem' }}>
-                <a href="https://www.facebook.com/DxbSqlnch0" target="_blank" rel="noreferrer" className="btn btn-secondary">Facebook</a>
-                <a href="https://www.linkedin.com/in/dxbsaqlain405?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" className="btn btn-secondary">LinkedIn</a>
+
+            <div className="card glass" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <div className="card-icon" style={{ margin: '0 auto 1rem auto' }}>📅</div>
+                <h3>Schedule a Call</h3>
+                <p style={{ margin: '1rem 0' }}>Grab time on our calendar to review your goals.</p>
+              </div>
+              <a href="https://calendly.com/" target="_blank" rel="noreferrer" className="btn btn-primary" style={{ marginTop: 'auto' }}>Schedule now</a>
+            </div>
+
+            <div className="card glass" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <div className="card-icon" style={{ margin: '0 auto 1rem auto' }}>🤝</div>
+                <h3>Connect With Us</h3>
+                <p style={{ margin: '1rem 0' }}>Follow Zonii Leads or connect with Saqlain.</p>
+              </div>
+              <div className="hero-buttons" style={{ justifyContent: 'center', marginTop: 'auto', gap: '0.5rem' }}>
+                <a href="https://www.facebook.com/DxbSqlnch0" target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ padding: '0.5rem 0.8rem', fontSize: '0.85rem' }}>Facebook</a>
+                <a href="https://www.linkedin.com/in/dxbsaqlain405?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ padding: '0.5rem 0.8rem', fontSize: '0.85rem' }}>LinkedIn</a>
               </div>
             </div>
           </div>
