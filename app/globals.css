@@ -17,7 +17,25 @@
   --cta-bg: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
   --step-num-border: rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 24px 70px rgba(17, 24, 39, 0.08);
+
+  /* Google Stitch Theme Variables - Light Mode Default */
+  --stitch-bg: #f5f6fa;
+  --stitch-text: #1a1f2f;
+  --stitch-text-secondary: #5d6b82;
+  --stitch-surface-low: #ffffff;
+  --stitch-surface-high: #eef0f6;
+  --stitch-surface-highest: #e2e5f0;
+  --stitch-border: rgba(26, 31, 47, 0.08);
+  --stitch-outline-variant: rgba(26, 31, 47, 0.15);
+  --stitch-gradient-start: #4f46e5;
+  --stitch-gradient-end: #06b6d4;
+  --stitch-btn-text: #ffffff;
+  --stitch-glow-color: rgba(79, 70, 229, 0.12);
+  --stitch-grid-color: rgba(26, 31, 47, 0.02);
+  --stitch-ambient-1: rgba(79, 70, 229, 0.04);
+  --stitch-ambient-2: rgba(6, 182, 212, 0.04);
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root:not(.light) {
@@ -36,6 +54,23 @@
     --wins-bg: rgba(255, 255, 255, 0.02);
     --cta-bg: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
     --step-num-border: rgba(255, 255, 255, 0.2);
+
+    /* Google Stitch Theme Variables - Dark Mode */
+    --stitch-bg: #0e1322;
+    --stitch-text: #dee1f7;
+    --stitch-text-secondary: #c7c4d8;
+    --stitch-surface-low: #161b2b;
+    --stitch-surface-high: #25293a;
+    --stitch-surface-highest: #2f3445;
+    --stitch-border: rgba(70, 69, 85, 0.15);
+    --stitch-outline-variant: rgba(70, 69, 85, 0.3);
+    --stitch-gradient-start: #c4c0ff;
+    --stitch-gradient-end: #41eec2;
+    --stitch-btn-text: #100069;
+    --stitch-glow-color: rgba(108, 99, 255, 0.25);
+    --stitch-grid-color: rgba(145, 143, 161, 0.03);
+    --stitch-ambient-1: rgba(196, 192, 255, 0.06);
+    --stitch-ambient-2: rgba(65, 238, 194, 0.06);
   }
 }
 
@@ -55,7 +90,25 @@
   --wins-bg: rgba(255, 255, 255, 0.02);
   --cta-bg: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
   --step-num-border: rgba(255, 255, 255, 0.2);
+
+  /* Google Stitch Theme Variables - Dark Mode */
+  --stitch-bg: #0e1322;
+  --stitch-text: #dee1f7;
+  --stitch-text-secondary: #c7c4d8;
+  --stitch-surface-low: #161b2b;
+  --stitch-surface-high: #25293a;
+  --stitch-surface-highest: #2f3445;
+  --stitch-border: rgba(70, 69, 85, 0.15);
+  --stitch-outline-variant: rgba(70, 69, 85, 0.3);
+  --stitch-gradient-start: #c4c0ff;
+  --stitch-gradient-end: #41eec2;
+  --stitch-btn-text: #100069;
+  --stitch-glow-color: rgba(108, 99, 255, 0.25);
+  --stitch-grid-color: rgba(145, 143, 161, 0.03);
+  --stitch-ambient-1: rgba(196, 192, 255, 0.06);
+  --stitch-ambient-2: rgba(65, 238, 194, 0.06);
 }
+
 
 * {
   box-sizing: border-box;
@@ -1194,27 +1247,31 @@ h3 {
 
 /* Google Stitch Design System Styles */
 .stitch-bg {
-  background-color: #0e1322 !important;
-  color: #dee1f7 !important;
+  background-color: var(--stitch-bg) !important;
+  color: var(--stitch-text) !important;
+  transition: background-color 0.3s ease, color 0.3s ease !important;
 }
 
 .stitch-surface-low {
-  background-color: #161b2b !important;
+  background-color: var(--stitch-surface-low) !important;
   border: none !important;
+  transition: background-color 0.3s ease !important;
 }
 
 .stitch-surface-high {
-  background-color: #25293a !important;
+  background-color: var(--stitch-surface-high) !important;
   border: none !important;
+  transition: background-color 0.3s ease !important;
 }
 
 .stitch-surface-highest {
-  background-color: #2f3445 !important;
+  background-color: var(--stitch-surface-highest) !important;
   border: none !important;
+  transition: background-color 0.3s ease !important;
 }
 
 .stitch-gradient-text {
-  background: linear-gradient(135deg, #c4c0ff 0%, #41eec2 100%) !important;
+  background: linear-gradient(135deg, var(--stitch-gradient-start) 0%, var(--stitch-gradient-end) 100%) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
@@ -1222,32 +1279,32 @@ h3 {
 }
 
 .stitch-gradient-btn {
-  background: linear-gradient(135deg, #c4c0ff 0%, #41eec2 100%) !important;
-  color: #100069 !important;
+  background: linear-gradient(135deg, var(--stitch-gradient-start) 0%, var(--stitch-gradient-end) 100%) !important;
+  color: var(--stitch-btn-text) !important;
   font-family: 'Space Grotesk', sans-serif !important;
   font-weight: 700 !important;
   border: none !important;
-  box-shadow: 0 0 20px rgba(108, 99, 255, 0.25) !important;
-  transition: all 0.2s ease !important;
+  box-shadow: 0 0 20px var(--stitch-glow-color) !important;
+  transition: all 0.2s ease, background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .stitch-gradient-btn:hover {
   transform: scale(1.02) !important;
-  box-shadow: 0 0 30px rgba(65, 238, 194, 0.35) !important;
+  box-shadow: 0 0 30px var(--stitch-glow-color) !important;
 }
 
 .stitch-ghost-btn {
   background: transparent !important;
-  border: 1px solid rgba(70, 69, 85, 0.2) !important;
-  color: #c4c0ff !important;
+  border: 1px solid var(--stitch-border) !important;
+  color: var(--stitch-gradient-start) !important;
   font-family: 'Space Grotesk', sans-serif !important;
   font-weight: 700 !important;
-  transition: all 0.2s ease !important;
+  transition: all 0.2s ease, border-color 0.3s ease, color 0.3s ease !important;
 }
 
 .stitch-ghost-btn:hover {
-  background: rgba(47, 52, 69, 0.3) !important;
-  border-color: rgba(196, 192, 255, 0.4) !important;
+  background: var(--stitch-surface-high) !important;
+  border-color: var(--stitch-gradient-start) !important;
   transform: scale(1.02) !important;
 }
 
@@ -1260,9 +1317,10 @@ h3 {
 }
 
 .bg-grid-pattern {
-  background-image: linear-gradient(to right, rgba(145, 143, 161, 0.03) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(145, 143, 161, 0.03) 1px, transparent 1px) !important;
+  background-image: linear-gradient(to right, var(--stitch-grid-color) 1px, transparent 1px),
+                    linear-gradient(to bottom, var(--stitch-grid-color) 1px, transparent 1px) !important;
   background-size: 40px 40px !important;
+  transition: background-image 0.3s ease !important;
 }
 
 .ambient-glow-1 {
@@ -1271,11 +1329,12 @@ h3 {
   left: 20%;
   width: 500px;
   height: 500px;
-  background: rgba(196, 192, 255, 0.06);
+  background: var(--stitch-ambient-1);
   border-radius: 50%;
   filter: blur(100px);
   pointer-events: none;
   z-index: 0;
+  transition: background 0.3s ease !important;
 }
 
 .ambient-glow-2 {
@@ -1284,35 +1343,37 @@ h3 {
   right: 20%;
   width: 500px;
   height: 500px;
-  background: rgba(65, 238, 194, 0.06);
+  background: var(--stitch-ambient-2);
   border-radius: 50%;
   filter: blur(100px);
   pointer-events: none;
   z-index: 0;
+  transition: background 0.3s ease !important;
 }
 
 .stitch-card {
   border-radius: 16px !important;
   padding: 2rem !important;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  border: 1px solid rgba(70, 69, 85, 0.15) !important;
-  background-color: #161b2b !important;
+  border: 1px solid var(--stitch-border) !important;
+  background-color: var(--stitch-surface-low) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease, border-color 0.3s ease !important;
 }
 
 .stitch-card:hover {
-  background-color: #25293a !important;
+  background-color: var(--stitch-surface-high) !important;
   transform: translateY(-2px) scale(1.01) !important;
-  box-shadow: 0 0 25px rgba(108, 99, 255, 0.1) !important;
+  box-shadow: 0 0 25px var(--stitch-glow-color) !important;
 }
 
 /* Timeline specific styles */
 .stitch-timeline-line {
   position: absolute;
   width: 2px;
-  background: rgba(70, 69, 85, 0.3);
+  background: var(--stitch-border);
   top: 0;
   bottom: 0;
   left: 31px;
+  transition: background-color 0.3s ease !important;
 }
 
 @media (min-width: 768px) {
@@ -1323,10 +1384,11 @@ h3 {
 }
 
 .stitch-pill {
-  background-color: #2f3445 !important;
-  color: #41eec2 !important;
+  background-color: var(--stitch-surface-highest) !important;
+  color: var(--stitch-gradient-end) !important;
   border-radius: 9999px !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
+  transition: background-color 0.3s ease, color 0.3s ease !important;
 }
 
 @media (max-width: 768px) {
