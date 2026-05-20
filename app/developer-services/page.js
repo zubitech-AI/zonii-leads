@@ -25,8 +25,8 @@ export default function DeveloperServicesPage() {
 
       {/* Hero Section */}
       <section className="relative z-10" style={{ 
-        padding: '5.5rem 0 2rem 0', 
-        minHeight: 'calc(100vh - 80px)', 
+        padding: '1.5rem 0', 
+        minHeight: 'calc(100vh - 96px)', 
         display: 'flex', 
         alignItems: 'center' 
       }}>
