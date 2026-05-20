@@ -1,178 +1,535 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Developer, DevOps & Agentic AI Services | ZubiTech',
-  description: 'Premium Full-Stack development, mobile apps, DevOps pipelines, and Agentic AI workflow automation built by ZubiTech.',
+  title: 'Senior Developer & AI Engineer Portfolio | ZubiTech',
+  description: 'Premium Full-Stack development, mobile apps, DevOps pipelines, and Agentic AI systems built by ZubiTech, Tech Lead at NCAI Lahore.',
 }
 
 export default function DeveloperServicesPage() {
   return (
-    <main id="main">
+    <main id="main" className="stitch-bg stitch-font-body min-h-screen relative overflow-hidden" style={{ background: '#0e1322', color: '#dee1f7' }}>
+      {/* Grid Background Pattern */}
+      <div className="bg-grid-pattern" style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 0 }}></div>
+      
+      {/* Ambient Glows */}
+      <div className="ambient-glow-1"></div>
+      <div className="ambient-glow-2"></div>
+
       {/* Hero Section */}
-      <section className="page-hero">
+      <section className="relative z-10" style={{ padding: '8rem 0 5rem 0' }}>
         <div className="container">
-          <div className="hero-content">
-            <h1>
-              End-to-End Software, DevOps & <span className="text-gradient">Agentic AI.</span>
-            </h1>
-            <p className="hero-subtitle">
-              Hi, I'm a Senior Full-Stack Developer, Mobile App Developer, DevOps Architect, and Agentic AI Engineer. I design and build production-ready digital engines—from cloud-native web and mobile applications to multi-agent AI ecosystems.
-            </p>
-            <div className="hero-buttons">
-              <a href="#contact-dev" className="btn btn-primary">Start a Project</a>
-              <a href="#services-dev" className="btn btn-secondary">Explore Capabilities</a>
+          <div className="grid-2" style={{ alignItems: 'center', gap: '4rem' }}>
+            {/* Left Side Info */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', alignItems: 'flex-start' }}>
+              {/* Availability Badge */}
+              <div style={{ 
+                display: 'inline-flex', 
+                alignItems: 'center', 
+                gap: '0.5rem', 
+                backgroundColor: '#2f3445', 
+                padding: '0.5rem 1rem', 
+                borderRadius: '9999px',
+                border: '1px solid rgba(70, 69, 85, 0.3)'
+              }}>
+                <div style={{ 
+                  width: '8px', 
+                  height: '8px', 
+                  borderRadius: '50%', 
+                  backgroundColor: '#41eec2', 
+                  boxShadow: '0 0 10px #41eec2' 
+                }} className="pulse-dot"></div>
+                <span style={{ 
+                  fontSize: '0.75rem', 
+                  fontWeight: 600, 
+                  textTransform: 'uppercase', 
+                  letterSpacing: '0.15em', 
+                  color: '#41eec2' 
+                }}>Available for International Projects</span>
+              </div>
+
+              {/* Headings */}
+              <h1 className="stitch-font-headline" style={{ 
+                fontSize: 'clamp(2.5rem, 5vw, 4rem)', 
+                lineHeight: 1.1, 
+                fontWeight: 900, 
+                letterSpacing: '-0.04em',
+                margin: 0
+              }}>
+                Full-Stack, DevOps & <span className="stitch-gradient-text">Agentic AI.</span>
+              </h1>
+              
+              <p style={{ 
+                fontSize: '1.15rem', 
+                color: '#c7c4d8', 
+                lineHeight: 1.6, 
+                margin: 0,
+                maxWidth: '600px'
+              }}>
+                Hi, I'm Zubaid Rasool, a Senior AI Research Engineer and Tech Lead at the <strong>National Center of Artificial Intelligence (NCAI), Lahore</strong>. I build premium web applications, native-speed mobile apps, automated DevOps systems, and collaborative multi-agent AI swarms for clients worldwide.
+              </p>
+
+              {/* CTAs */}
+              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
+                <a href="#contact-dev" className="btn stitch-gradient-btn" style={{ padding: '0.8rem 2rem', borderRadius: '9999px', fontSize: '0.95rem', textDecoration: 'none' }}>
+                  Work With Me
+                </a>
+                <a href="#experience-dev" className="btn stitch-ghost-btn" style={{ padding: '0.8rem 2rem', borderRadius: '9999px', fontSize: '0.95rem', textDecoration: 'none' }}>
+                  View My Journey
+                </a>
+              </div>
+
+              {/* Stats Row */}
+              <div style={{ 
+                display: 'flex', 
+                gap: '2rem', 
+                marginTop: '2rem', 
+                borderTop: '1px solid rgba(70, 69, 85, 0.2)', 
+                paddingTop: '2rem',
+                width: '100%'
+              }}>
+                <div>
+                  <div className="stitch-font-headline" style={{ fontSize: '2.2rem', fontWeight: 700, color: '#ffffff' }}>NCAI</div>
+                  <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#c7c4d8', marginTop: '0.2rem' }}>AI Research Lab</div>
+                </div>
+                <div style={{ width: '1px', backgroundColor: 'rgba(70, 69, 85, 0.2)' }}></div>
+                <div>
+                  <div className="stitch-font-headline" style={{ fontSize: '2.2rem', fontWeight: 700, color: '#ffffff' }}>50+</div>
+                  <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#c7c4d8', marginTop: '0.2rem' }}>Global Projects</div>
+                </div>
+                <div style={{ width: '1px', backgroundColor: 'rgba(70, 69, 85, 0.2)' }}></div>
+                <div>
+                  <div className="stitch-font-headline" style={{ fontSize: '2.2rem', fontWeight: 700, color: '#ffffff' }}>100%</div>
+                  <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#c7c4d8', marginTop: '0.2rem' }}>SLA Delivery</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side Orbiting Sphere (Hidden on mobile) */}
+            <div className="hide-on-mobile" style={{ display: 'flex', justifyContent: 'center', position: 'relative' }}>
+              <div style={{ 
+                position: 'relative', 
+                width: '320px', 
+                height: '320px', 
+                borderRadius: '50%', 
+                backgroundColor: '#090e1c', 
+                border: '1px solid rgba(70, 69, 85, 0.2)', 
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center',
+                boxShadow: '0 0 50px rgba(108, 99, 255, 0.1)'
+              }}>
+                {/* Central Sphere Image */}
+                <div style={{ 
+                  width: '256px', 
+                  height: '256px', 
+                  borderRadius: '50%', 
+                  overflow: 'hidden', 
+                  border: '2px solid #25293a',
+                  position: 'relative',
+                  zIndex: 10,
+                  backgroundColor: '#161b2b'
+                }}>
+                  <img 
+                    alt="Abstract glowing 3D code sphere" 
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFs5iiL_jbhWBJHs3rlxWoqC3w7wkEdAA3MzHd_eWHxZgBBgAw0asH6Y3PWNUl6g_xc40_7zw90DTKpmHQIgTAjCuZ2U1hMpLMGLaXNzmuJjWInOaCC1VgqrYPYIUPs3AT6m9AuGn11ag2ZteiV5jmQHCjEUjJbe7sik_jrYs9zUV8c4NrprzBMPDvIU7zKPoxkmp9XDHxi27Sun_I964vIajxUIxmssGUD_zDiRlsyttPfpRAjFWq99-r07avauDiOOoOK0s0FTi0" 
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.8 }}
+                  />
+                </div>
+
+                {/* Orbiting Chips */}
+                {/* React */}
+                <div style={{ 
+                  position: 'absolute', 
+                  top: '-20px', 
+                  left: '50%', 
+                  transform: 'translateX(-50%)', 
+                  backgroundColor: 'rgba(47, 52, 69, 0.8)', 
+                  backdropFilter: 'blur(10px)', 
+                  border: '1px solid rgba(70, 69, 85, 0.4)', 
+                  padding: '0.4rem 1rem', 
+                  borderRadius: '9999px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  zIndex: 20
+                }}>
+                  <span style={{ color: '#41eec2', fontSize: '0.75rem', fontWeight: 'bold' }}>React / Next</span>
+                </div>
+                {/* Flutter */}
+                <div style={{ 
+                  position: 'absolute', 
+                  top: '80px', 
+                  right: '-40px', 
+                  backgroundColor: 'rgba(47, 52, 69, 0.8)', 
+                  backdropFilter: 'blur(10px)', 
+                  border: '1px solid rgba(70, 69, 85, 0.4)', 
+                  padding: '0.4rem 1rem', 
+                  borderRadius: '9999px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  zIndex: 20
+                }}>
+                  <span style={{ color: '#c4c0ff', fontSize: '0.75rem', fontWeight: 'bold' }}>Flutter</span>
+                </div>
+                {/* AWS */}
+                <div style={{ 
+                  position: 'absolute', 
+                  bottom: '60px', 
+                  right: '-20px', 
+                  backgroundColor: 'rgba(47, 52, 69, 0.8)', 
+                  backdropFilter: 'blur(10px)', 
+                  border: '1px solid rgba(70, 69, 85, 0.4)', 
+                  padding: '0.4rem 1rem', 
+                  borderRadius: '9999px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  zIndex: 20
+                }}>
+                  <span style={{ color: '#ffb955', fontSize: '0.75rem', fontWeight: 'bold' }}>AWS / DevOps</span>
+                </div>
+                {/* Python */}
+                <div style={{ 
+                  position: 'absolute', 
+                  bottom: '-20px', 
+                  left: '50%', 
+                  transform: 'translateX(-50%)', 
+                  backgroundColor: 'rgba(47, 52, 69, 0.8)', 
+                  backdropFilter: 'blur(10px)', 
+                  border: '1px solid rgba(70, 69, 85, 0.4)', 
+                  padding: '0.4rem 1rem', 
+                  borderRadius: '9999px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  zIndex: 20
+                }}>
+                  <span style={{ color: '#28dfb5', fontSize: '0.75rem', fontWeight: 'bold' }}>Python / PyTorch</span>
+                </div>
+                {/* Docker */}
+                <div style={{ 
+                  position: 'absolute', 
+                  top: '120px', 
+                  left: '-50px', 
+                  backgroundColor: 'rgba(47, 52, 69, 0.8)', 
+                  backdropFilter: 'blur(10px)', 
+                  border: '1px solid rgba(70, 69, 85, 0.4)', 
+                  padding: '0.4rem 1rem', 
+                  borderRadius: '9999px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  zIndex: 20
+                }}>
+                  <span style={{ color: '#c4c0ff', fontSize: '0.75rem', fontWeight: 'bold' }}>Docker / K8s</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services-dev" className="section">
+      {/* Specialist Domains Section */}
+      <section id="services-dev" style={{ padding: '5rem 0', position: 'relative', zIndex: 10 }}>
         <div className="container">
-          <h2 style={{ textAlign: 'center' }}>My Specialist <span className="text-gradient">Domains</span></h2>
-          <p className="section-subtitle">
-            From coding frontends to orchestrating containerized clouds and training intelligent AI agents, I own the entire engineering lifecycle.
+          <h2 className="stitch-font-headline" style={{ textAlign: 'center', fontSize: '2.5rem', fontWeight: 800 }}>
+            Specialist <span className="stitch-gradient-text">Domains</span>
+          </h2>
+          <p style={{ textAlign: 'center', color: '#c7c4d8', maxWidth: '600px', margin: '0.5rem auto 3rem auto' }}>
+            From low-level system design and multi-agent AI frameworks to scalable deployment patterns.
           </p>
 
-          <div className="grid-2" style={{ marginTop: '3rem' }}>
-            {/* Full-Stack Web Development */}
-            <div className="card glass">
-              <div className="card-icon" style={{ background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(37, 99, 235, 0.15))' }}>💻</div>
-              <h3>Full-Stack Development</h3>
-              <p>High-performance, secure, and SEO-optimized web systems. I design modular frontends and distributed APIs that deliver exceptional user experience.</p>
-              <ul>
-                <li>React, Next.js, and Node.js ecosystems</li>
-                <li>State management & responsive UI design</li>
-                <li>PostgreSQL, MongoDB, and Redis integrations</li>
-                <li>Restful APIs & real-time WebSockets</li>
-              </ul>
+          <div className="grid-2">
+            {/* Full Stack Card */}
+            <div className="stitch-card">
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
+                <span style={{ fontSize: '2rem' }}>💻</span>
+                <span style={{ fontSize: '0.7rem', color: '#41eec2', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Premium Engineering</span>
+              </div>
+              <h3 className="stitch-font-headline" style={{ fontSize: '1.5rem', fontWeight: 700, color: '#ffffff', marginBottom: '0.75rem' }}>
+                Full-Stack Architecture
+              </h3>
+              <p style={{ color: '#c7c4d8', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
+                End-to-end web system design using reliable modular structures. I develop responsive client interfaces backed by secure, distributed backend APIs.
+              </p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <span className="stitch-pill" style={{ padding: '0.3rem 0.8rem', fontSize: '0.8rem' }}>Next.js</span>
+                <span className="stitch-pill" style={{ padding: '0.3rem 0.8rem', fontSize: '0.8rem' }}>TypeScript</span>
+                <span className="stitch-pill" style={{ padding: '0.3rem 0.8rem', fontSize: '0.8rem' }}>Node.js</span>
+                <span className="stitch-pill" style={{ padding: '0.3rem 0.8rem', fontSize: '0.8rem' }}>PostgreSQL</span>
+              </div>
             </div>
 
-            {/* Mobile App Development */}
-            <div className="card glass">
-              <div className="card-icon" style={{ background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(124, 58, 237, 0.15))' }}>📱</div>
-              <h3>Mobile App Development</h3>
-              <p>Native-speed cross-platform mobile apps for iOS and Android. Clean UI rendering, local database caching, and native hardware API integrations.</p>
-              <ul>
-                <li>Flutter & React Native frameworks</li>
-                <li>Offline-first local storage & sync</li>
-                <li>Push notifications & background tasks</li>
-                <li>App Store & Google Play publishing</li>
-              </ul>
+            {/* Mobile App Card */}
+            <div className="stitch-card">
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
+                <span style={{ fontSize: '2rem' }}>📱</span>
+                <span style={{ fontSize: '0.7rem', color: '#c4c0ff', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Native Performance</span>
+              </div>
+              <h3 className="stitch-font-headline" style={{ fontSize: '1.5rem', fontWeight: 700, color: '#ffffff', marginBottom: '0.75rem' }}>
+                Mobile App Engineering
+              </h3>
+              <p style={{ color: '#c7c4d8', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
+                Cross-platform mobile apps built with clean rendering logic, background task handling, secure local databases, and hardware integration.
+              </p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <span className="stitch-pill" style={{ padding: '0.3rem 0.8rem', fontSize: '0.8rem' }}>Flutter</span>
+                <span className="stitch-pill" style={{ padding: '0.3rem 0.8rem', fontSize: '0.8rem' }}>Dart</span>
+                <span className="stitch-pill" style={{ padding: '0.3rem 0.8rem', fontSize: '0.8rem' }}>React Native</span>
+                <span className="stitch-pill" style={{ padding: '0.3rem 0.8rem', fontSize: '0.8rem' }}>SQLite</span>
+              </div>
             </div>
 
-            {/* DevOps & Cloud Infrastructure */}
-            <div className="card glass">
-              <div className="card-icon" style={{ background: 'linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(219, 39, 119, 0.15))' }}>⚙️</div>
-              <h3>DevOps & Cloud Orchestration</h3>
-              <p>Automate your delivery and guarantee 99.9% uptime. I build infrastructure as code, secure continuous delivery pipelines, and configure cluster nodes.</p>
-              <ul>
-                <li>CI/CD Automation (GitHub Actions, GitLab CI)</li>
-                <li>Docker containerization & Kubernetes orchestration</li>
-                <li>AWS, GCP, Azure, and Vercel infrastructure</li>
-                <li>Terraform IaC & Prometheus/Grafana monitoring</li>
-              </ul>
+            {/* DevOps Card */}
+            <div className="stitch-card">
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
+                <span style={{ fontSize: '2rem' }}>⚙️</span>
+                <span style={{ fontSize: '0.7rem', color: '#ffb955', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Infrastructure As Code</span>
+              </div>
+              <h3 className="stitch-font-headline" style={{ fontSize: '1.5rem', fontWeight: 700, color: '#ffffff', marginBottom: '0.75rem' }}>
+                Cloud & DevOps Automation
+              </h3>
+              <p style={{ color: '#c7c4d8', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
+                Automating release pipelines, provisioning container clusters, configuring reverse proxies, and securing cloud infrastructure with zero downtime.
+              </p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <span className="stitch-pill" style={{ padding: '0.3rem 0.8rem', fontSize: '0.8rem' }}>Docker</span>
+                <span className="stitch-pill" style={{ padding: '0.3rem 0.8rem', fontSize: '0.8rem' }}>Kubernetes</span>
+                <span className="stitch-pill" style={{ padding: '0.3rem 0.8rem', fontSize: '0.8rem' }}>Terraform</span>
+                <span className="stitch-pill" style={{ padding: '0.3rem 0.8rem', fontSize: '0.8rem' }}>AWS</span>
+              </div>
             </div>
 
-            {/* AI & Agentic AI Specialist */}
-            <div className="card glass">
-              <div className="card-icon" style={{ background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.15))' }}>🤖</div>
-              <h3>AI & Agentic AI Engineering</h3>
-              <p>Move beyond simple prompts. I build autonomous AI agent systems that collaborate to solve complex business operations, read databases, and write code.</p>
-              <ul>
-                <li>Multi-Agent Frameworks (CrewAI, AutoGen, LangChain)</li>
-                <li>Retrieval-Augmented Generation (RAG) vector pipelines</li>
-                <li>LLM fine-tuning, embeddings, and prompting systems</li>
-                <li>Cognitive workflows & database-driven agents</li>
-              </ul>
+            {/* AI Engineering Card */}
+            <div className="stitch-card">
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
+                <span style={{ fontSize: '2rem' }}>🤖</span>
+                <span style={{ fontSize: '0.7rem', color: '#41eec2', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.1em' }}>State of the Art AI</span>
+              </div>
+              <h3 className="stitch-font-headline" style={{ fontSize: '1.5rem', fontWeight: 700, color: '#ffffff', marginBottom: '0.75rem' }}>
+                Agentic AI & LLMOps
+              </h3>
+              <p style={{ color: '#c7c4d8', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
+                Autonomous agent networks and vector pipelines for reasoning tasks. I construct RAG systems that query live knowledge stores and database systems.
+              </p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <span className="stitch-pill" style={{ padding: '0.3rem 0.8rem', fontSize: '0.8rem' }}>CrewAI</span>
+                <span className="stitch-pill" style={{ padding: '0.3rem 0.8rem', fontSize: '0.8rem' }}>LangChain</span>
+                <span className="stitch-pill" style={{ padding: '0.3rem 0.8rem', fontSize: '0.8rem' }}>LLM Fine-tuning</span>
+                <span className="stitch-pill" style={{ padding: '0.3rem 0.8rem', fontSize: '0.8rem' }}>Vector DBs</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Technology Stack Showcase */}
-      <section className="section wins-section">
+      {/* Technical Stack Table */}
+      <section style={{ padding: '5rem 0', position: 'relative', zIndex: 10 }} className="wins-section">
         <div className="container">
-          <h2 style={{ textAlign: 'center' }}>My Technical <span className="text-gradient">Stack</span></h2>
-          <p className="section-subtitle" style={{ marginBottom: '3rem' }}>
-            A curated list of modern technologies, libraries, and frameworks I leverage daily.
+          <h2 className="stitch-font-headline" style={{ textAlign: 'center', fontSize: '2.5rem', fontWeight: 800 }}>
+            Curated <span className="stitch-gradient-text">Tech Stack</span>
+          </h2>
+          <p style={{ textAlign: 'center', color: '#c7c4d8', maxWidth: '600px', margin: '0.5rem auto 3rem auto' }}>
+            Preconfigured tools and systems I leverage to build software systems rapidly.
           </p>
 
           <div className="grid-3">
-            <div className="card glass" style={{ padding: '2rem' }}>
-              <h3 style={{ borderBottom: '1px solid var(--glass-border)', paddingBottom: '0.5rem', marginBottom: '1rem', color: 'var(--accent-primary)' }}>Frontend & Mobile</h3>
-              <ul style={{ listStyle: 'none' }}>
-                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.4rem 0' }}><span>Next.js / React</span> <strong style={{ color: 'var(--text-secondary)' }}>Expert</strong></li>
-                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.4rem 0' }}><span>Flutter / Dart</span> <strong style={{ color: 'var(--text-secondary)' }}>Expert</strong></li>
-                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.4rem 0' }}><span>React Native</span> <strong style={{ color: 'var(--text-secondary)' }}>Senior</strong></li>
-                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.4rem 0' }}><span>TypeScript / JS</span> <strong style={{ color: 'var(--text-secondary)' }}>Expert</strong></li>
+            <div className="stitch-card" style={{ padding: '2rem', minHeight: 'auto' }}>
+              <h3 className="stitch-font-headline" style={{ color: '#c4c0ff', borderBottom: '1px solid rgba(70, 69, 85, 0.2)', paddingBottom: '0.5rem', marginBottom: '1rem', fontSize: '1.25rem' }}>Frontend / Mobile</h3>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.5rem 0', borderBottom: '1px solid rgba(70, 69, 85, 0.1)' }}><span>Next.js / React</span> <span style={{ color: '#41eec2', fontWeight: 600 }}>Expert</span></li>
+                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.5rem 0', borderBottom: '1px solid rgba(70, 69, 85, 0.1)' }}><span>Flutter & Dart</span> <span style={{ color: '#41eec2', fontWeight: 600 }}>Expert</span></li>
+                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.5rem 0', borderBottom: '1px solid rgba(70, 69, 85, 0.1)' }}><span>React Native</span> <span style={{ color: '#c4c0ff', fontWeight: 600 }}>Senior</span></li>
+                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.5rem 0' }}><span>TypeScript</span> <span style={{ color: '#41eec2', fontWeight: 600 }}>Expert</span></li>
               </ul>
             </div>
 
-            <div className="card glass" style={{ padding: '2rem' }}>
-              <h3 style={{ borderBottom: '1px solid var(--glass-border)', paddingBottom: '0.5rem', marginBottom: '1rem', color: 'var(--accent-secondary)' }}>Backend & Devops</h3>
-              <ul style={{ listStyle: 'none' }}>
-                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.4rem 0' }}><span>Node.js / Express</span> <strong style={{ color: 'var(--text-secondary)' }}>Expert</strong></li>
-                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.4rem 0' }}><span>Docker / K8s</span> <strong style={{ color: 'var(--text-secondary)' }}>Senior</strong></li>
-                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.4rem 0' }}><span>Terraform / AWS</span> <strong style={{ color: 'var(--text-secondary)' }}>Senior</strong></li>
-                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.4rem 0' }}><span>Python / Django</span> <strong style={{ color: 'var(--text-secondary)' }}>Expert</strong></li>
+            <div className="stitch-card" style={{ padding: '2rem', minHeight: 'auto' }}>
+              <h3 className="stitch-font-headline" style={{ color: '#41eec2', borderBottom: '1px solid rgba(70, 69, 85, 0.2)', paddingBottom: '0.5rem', marginBottom: '1rem', fontSize: '1.25rem' }}>Backend / DevOps</h3>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.5rem 0', borderBottom: '1px solid rgba(70, 69, 85, 0.1)' }}><span>Node.js / Express</span> <span style={{ color: '#41eec2', fontWeight: 600 }}>Expert</span></li>
+                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.5rem 0', borderBottom: '1px solid rgba(70, 69, 85, 0.1)' }}><span>Docker / Kubernetes</span> <span style={{ color: '#41eec2', fontWeight: 600 }}>Senior</span></li>
+                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.5rem 0', borderBottom: '1px solid rgba(70, 69, 85, 0.1)' }}><span>Terraform / IaC</span> <span style={{ color: '#c4c0ff', fontWeight: 600 }}>Senior</span></li>
+                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.5rem 0' }}><span>AWS / GCP</span> <span style={{ color: '#41eec2', fontWeight: 600 }}>Senior</span></li>
               </ul>
             </div>
 
-            <div className="card glass" style={{ padding: '2rem' }}>
-              <h3 style={{ borderBottom: '1px solid var(--glass-border)', paddingBottom: '0.5rem', marginBottom: '1rem', color: '#10B981' }}>Artificial Intelligence</h3>
-              <ul style={{ listStyle: 'none' }}>
-                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.4rem 0' }}><span>Agentic Workflows</span> <strong style={{ color: 'var(--text-secondary)' }}>Expert</strong></li>
-                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.4rem 0' }}><span>CrewAI / AutoGen</span> <strong style={{ color: 'var(--text-secondary)' }}>Expert</strong></li>
-                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.4rem 0' }}><span>Vector DBs (pgvector)</span> <strong style={{ color: 'var(--text-secondary)' }}>Senior</strong></li>
-                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.4rem 0' }}><span>LangChain / LLMs</span> <strong style={{ color: 'var(--text-secondary)' }}>Expert</strong></li>
+            <div className="stitch-card" style={{ padding: '2rem', minHeight: 'auto' }}>
+              <h3 className="stitch-font-headline" style={{ color: '#ffb955', borderBottom: '1px solid rgba(70, 69, 85, 0.2)', paddingBottom: '0.5rem', marginBottom: '1rem', fontSize: '1.25rem' }}>AI & Data</h3>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.5rem 0', borderBottom: '1px solid rgba(70, 69, 85, 0.1)' }}><span>Agentic CrewAI / AutoGen</span> <span style={{ color: '#41eec2', fontWeight: 600 }}>Expert</span></li>
+                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.5rem 0', borderBottom: '1px solid rgba(70, 69, 85, 0.1)' }}><span>LangChain / RAG</span> <span style={{ color: '#41eec2', fontWeight: 600 }}>Expert</span></li>
+                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.5rem 0', borderBottom: '1px solid rgba(70, 69, 85, 0.1)' }}><span>Python / PyTorch</span> <span style={{ color: '#41eec2', fontWeight: 600 }}>Expert</span></li>
+                <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.5rem 0' }}><span>Vector Databases</span> <span style={{ color: '#c4c0ff', fontWeight: 600 }}>Senior</span></li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Workflow Section */}
-      <section className="section">
+      {/* Experience / Timeline Section */}
+      <section id="experience-dev" style={{ padding: '5rem 0', position: 'relative', zIndex: 10 }}>
         <div className="container">
-          <h2 style={{ textAlign: 'center' }}>My Engineering <span className="text-gradient">Blueprint</span></h2>
-          <p className="section-subtitle">
-            How I turn ideas into reliable, scalable software products.
+          <h2 className="stitch-font-headline" style={{ textAlign: 'center', fontSize: '2.5rem', fontWeight: 800 }}>
+            Professional <span className="stitch-gradient-text">Journey</span>
+          </h2>
+          <p style={{ textAlign: 'center', color: '#c7c4d8', maxWidth: '600px', margin: '0.5rem auto 4rem auto' }}>
+            A track record of engineering leadership, academic AI research, and global system deployments.
           </p>
 
-          <div className="grid-2" style={{ marginTop: '4rem' }}>
+          <div style={{ position: 'relative', maxWidth: '800px', margin: '0 auto' }}>
+            {/* Timeline center line */}
+            <div className="stitch-timeline-line"></div>
+
+            {/* Experience Item 1 (NCAI Lahore) */}
+            <div style={{ display: 'flex', position: 'relative', marginBottom: '3rem', flexDirection: 'column' }} className="timeline-block">
+              {/* Point Indicator */}
+              <div style={{ 
+                position: 'absolute', 
+                left: '22px', 
+                top: '0', 
+                width: '20px', 
+                height: '20px', 
+                borderRadius: '50%', 
+                backgroundColor: '#0e1322', 
+                border: '3px solid #41eec2',
+                zIndex: 20
+              }} className="timeline-point"></div>
+
+              {/* Card Container */}
+              <div className="stitch-card" style={{ marginLeft: '4rem', padding: '1.5rem 2rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
+                  <div>
+                    <h3 className="stitch-font-headline" style={{ fontSize: '1.3rem', fontWeight: 700, color: '#ffffff', margin: 0 }}>Senior AI Research Engineer & Tech Lead</h3>
+                    <div style={{ color: '#41eec2', fontWeight: 600, fontSize: '0.9rem', marginTop: '0.2rem' }}>National Center of Artificial Intelligence (NCAI), Lahore</div>
+                  </div>
+                  <span style={{ fontSize: '0.75rem', fontWeight: 'bold', backgroundColor: '#2f3445', color: '#41eec2', padding: '0.3rem 0.8rem', borderRadius: '9999px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    2023 - Present
+                  </span>
+                </div>
+                <ul style={{ paddingLeft: '1rem', margin: 0, color: '#c7c4d8', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                  <li style={{ marginBottom: '0.5rem' }}>Lead generative AI research and software architecture for national-scale intelligent computing pipelines.</li>
+                  <li style={{ marginBottom: '0.5rem' }}>Engineered localized RAG systems and autonomous agent workflows to handle massive internal data systems.</li>
+                  <li style={{ marginBottom: '0.5rem' }}>Designed automated compliance tools and financial performance tracking platforms for institutional operations.</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Experience Item 2 (International Clients) */}
+            <div style={{ display: 'flex', position: 'relative', marginBottom: '3rem', flexDirection: 'column' }} className="timeline-block">
+              {/* Point Indicator */}
+              <div style={{ 
+                position: 'absolute', 
+                left: '22px', 
+                top: '0', 
+                width: '20px', 
+                height: '20px', 
+                borderRadius: '50%', 
+                backgroundColor: '#0e1322', 
+                border: '3px solid #c4c0ff',
+                zIndex: 20
+              }} className="timeline-point"></div>
+
+              {/* Card Container */}
+              <div className="stitch-card" style={{ marginLeft: '4rem', padding: '1.5rem 2rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
+                  <div>
+                    <h3 className="stitch-font-headline" style={{ fontSize: '1.3rem', fontWeight: 700, color: '#ffffff', margin: 0 }}>Lead Full-Stack & DevOps Consultant</h3>
+                    <div style={{ color: '#c4c0ff', fontWeight: 600, fontSize: '0.9rem', marginTop: '0.2rem' }}>International Freelancing & Remote Projects</div>
+                  </div>
+                  <span style={{ fontSize: '0.75rem', fontWeight: 'bold', backgroundColor: '#2f3445', color: '#c4c0ff', padding: '0.3rem 0.8rem', borderRadius: '9999px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    2021 - 2023
+                  </span>
+                </div>
+                <ul style={{ paddingLeft: '1rem', margin: 0, color: '#c7c4d8', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                  <li style={{ marginBottom: '0.5rem' }}>Consulted US, UK, and Middle East startups on cloud migration strategies, infrastructure setups, and API designs.</li>
+                  <li style={{ marginBottom: '0.5rem' }}>Built high-speed Next.js web platforms and set up automated, secure Kubernetes clusters, dropping operation costs by 35%.</li>
+                  <li style={{ marginBottom: '0.5rem' }}>Integrated payment gateways, authentication layers, and real-time dashboard data visuals for international businesses.</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Experience Item 3 (Mobile Development) */}
+            <div style={{ display: 'flex', position: 'relative', marginBottom: '1rem', flexDirection: 'column' }} className="timeline-block">
+              {/* Point Indicator */}
+              <div style={{ 
+                position: 'absolute', 
+                left: '22px', 
+                top: '0', 
+                width: '20px', 
+                height: '20px', 
+                borderRadius: '50%', 
+                backgroundColor: '#0e1322', 
+                border: '3px solid #ffb955',
+                zIndex: 20
+              }} className="timeline-point"></div>
+
+              {/* Card Container */}
+              <div className="stitch-card" style={{ marginLeft: '4rem', padding: '1.5rem 2rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
+                  <div>
+                    <h3 className="stitch-font-headline" style={{ fontSize: '1.3rem', fontWeight: 700, color: '#ffffff', margin: 0 }}>Senior Mobile Application Developer</h3>
+                    <div style={{ color: '#ffb955', fontWeight: 600, fontSize: '0.9rem', marginTop: '0.2rem' }}>Software Hub & Tech Agencies</div>
+                  </div>
+                  <span style={{ fontSize: '0.75rem', fontWeight: 'bold', backgroundColor: '#2f3445', color: '#ffb955', padding: '0.3rem 0.8rem', borderRadius: '9999px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    2019 - 2021
+                  </span>
+                </div>
+                <ul style={{ paddingLeft: '1rem', margin: 0, color: '#c7c4d8', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                  <li style={{ marginBottom: '0.5rem' }}>Coded responsive cross-platform applications in Flutter and React Native.</li>
+                  <li style={{ marginBottom: '0.5rem' }}>Engineered offline caching sync processes, native background services, and real-time push engines.</li>
+                  <li style={{ marginBottom: '0.5rem' }}>Delivered over 12 projects on the Google Play Store and App Store with optimized build sizing.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Blueprint Process Section */}
+      <section style={{ padding: '5rem 0', position: 'relative', zIndex: 10 }} className="wins-section">
+        <div className="container">
+          <h2 className="stitch-font-headline" style={{ textAlign: 'center', fontSize: '2.5rem', fontWeight: 800 }}>
+            Engineering <span className="stitch-gradient-text">Blueprint</span>
+          </h2>
+          <p style={{ textAlign: 'center', color: '#c7c4d8', maxWidth: '600px', margin: '0.5rem auto 3rem auto' }}>
+            A systematic roadmap to take software architecture from concept to live production.
+          </p>
+
+          <div className="grid-2">
             <div>
-              <div className="process-step">
-                <div className="step-number">01</div>
-                <div className="step-content">
-                  <h3>Architecture Design</h3>
-                  <p>Modeling system components, database schemas, and cloud topology before writing code.</p>
+              <div className="process-step" style={{ display: 'flex', gap: '1.5rem', marginBottom: '2.5rem' }}>
+                <div className="stitch-font-headline" style={{ fontSize: '3rem', fontWeight: 900, color: 'rgba(196, 192, 255, 0.3)', lineHeight: 1 }}>01</div>
+                <div>
+                  <h3 className="stitch-font-headline" style={{ fontSize: '1.25rem', fontWeight: 700, margin: '0 0 0.5rem 0', color: '#ffffff' }}>System Blueprinting</h3>
+                  <p style={{ color: '#c7c4d8', margin: 0, fontSize: '0.95rem', lineHeight: 1.5 }}>Drafting sequence diagrams, cloud topology, schema definitions, and model layers before shipping code.</p>
                 </div>
               </div>
 
-              <div className="process-step">
-                <div className="step-number">02</div>
-                <div className="step-content">
-                  <h3>Sprint Development</h3>
-                  <p>Building scalable frontends and secure backends with continuous unit and integration tests.</p>
+              <div className="process-step" style={{ display: 'flex', gap: '1.5rem', marginBottom: '2.5rem' }}>
+                <div className="stitch-font-headline" style={{ fontSize: '3rem', fontWeight: 900, color: 'rgba(65, 238, 194, 0.3)', lineHeight: 1 }}>02</div>
+                <div>
+                  <h3 className="stitch-font-headline" style={{ fontSize: '1.25rem', fontWeight: 700, margin: '0 0 0.5rem 0', color: '#ffffff' }}>Sprint & Clean Code</h3>
+                  <p style={{ color: '#c7c4d8', margin: 0, fontSize: '0.95rem', lineHeight: 1.5 }}>Developing modular components, writing strict TypeScript typings, setting unit validations, and lint checking.</p>
                 </div>
               </div>
             </div>
 
             <div>
-              <div className="process-step">
-                <div className="step-number">03</div>
-                <div className="step-content">
-                  <h3>CI/CD Deployment</h3>
-                  <p>Deploying microservices using Docker/Kubernetes directly to optimized clusters with zero-downtime.</p>
+              <div className="process-step" style={{ display: 'flex', gap: '1.5rem', marginBottom: '2.5rem' }}>
+                <div className="stitch-font-headline" style={{ fontSize: '3rem', fontWeight: 900, color: 'rgba(196, 192, 255, 0.3)', lineHeight: 1 }}>03</div>
+                <div>
+                  <h3 className="stitch-font-headline" style={{ fontSize: '1.25rem', fontWeight: 700, margin: '0 0 0.5rem 0', color: '#ffffff' }}>Automated Pipelines</h3>
+                  <p style={{ color: '#c7c4d8', margin: 0, fontSize: '0.95rem', lineHeight: 1.5 }}>Setting up docker build targets, setting branch release pipelines, deploying nodes, and triggering monitoring telemetry.</p>
                 </div>
               </div>
 
-              <div className="process-step">
-                <div className="step-number">04</div>
-                <div className="step-content">
-                  <h3>AI & Automation</h3>
-                  <p>Integrating cognitive AI models and agent swarms to run manual business operations autonomously.</p>
+              <div className="process-step" style={{ display: 'flex', gap: '1.5rem', marginBottom: '2.5rem' }}>
+                <div className="stitch-font-headline" style={{ fontSize: '3rem', fontWeight: 900, color: 'rgba(65, 238, 194, 0.3)', lineHeight: 1 }}>04</div>
+                <div>
+                  <h3 className="stitch-font-headline" style={{ fontSize: '1.25rem', fontWeight: 700, margin: '0 0 0.5rem 0', color: '#ffffff' }}>Cognitive Agent Integration</h3>
+                  <p style={{ color: '#c7c4d8', margin: 0, fontSize: '0.95rem', lineHeight: 1.5 }}>Orchestrating agent runtimes with CrewAI, defining tool access boundaries, and deploying vector store indexing.</p>
                 </div>
               </div>
             </div>
@@ -181,66 +538,68 @@ export default function DeveloperServicesPage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact-dev" className="section wins-section">
+      <section id="contact-dev" style={{ padding: '5rem 0 7rem 0', position: 'relative', zIndex: 10 }}>
         <div className="container">
-          <h2 style={{ textAlign: 'center', marginBottom: '1rem' }}>Let's Build Your <span className="text-gradient">Next Project</span></h2>
-          <p className="section-subtitle" style={{ marginBottom: '3rem' }}>
-            Get in touch directly to discuss your software architecture, DevOps automation, or Agentic AI roadmap.
+          <h2 className="stitch-font-headline" style={{ textAlign: 'center', fontSize: '2.5rem', fontWeight: 800 }}>
+            Start a <span className="stitch-gradient-text">Project</span>
+          </h2>
+          <p style={{ textAlign: 'center', color: '#c7c4d8', maxWidth: '600px', margin: '0.5rem auto 4rem auto' }}>
+            Discuss custom application builds, container deployments, or multi-agent automation workflows.
           </p>
 
-          <div className="grid-4" style={{ marginBottom: '4rem' }}>
+          <div className="grid-4">
             {/* Email Card */}
-            <div className="card glass" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <div className="stitch-card" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '260px' }}>
               <div>
-                <div className="card-icon" style={{ margin: '0 auto 1rem auto' }}>✉️</div>
-                <h3>Email Me</h3>
-                <p style={{ margin: '1rem 0', fontSize: '0.95rem' }}>zubitech906@gmail.com</p>
+                <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>✉️</div>
+                <h3 className="stitch-font-headline" style={{ fontSize: '1.25rem', color: '#ffffff', margin: '0 0 0.5rem 0' }}>Email</h3>
+                <p style={{ color: '#c7c4d8', fontSize: '0.85rem', wordBreak: 'break-all', margin: '0 0 1rem 0' }}>zubitech906@gmail.com</p>
               </div>
-              <a href="mailto:zubitech906@gmail.com" className="btn btn-primary" style={{ marginTop: 'auto' }}>Send Email</a>
+              <a href="mailto:zubitech906@gmail.com" className="btn stitch-gradient-btn" style={{ textDecoration: 'none', padding: '0.6rem 1.5rem', borderRadius: '9999px', fontSize: '0.85rem' }}>Send Email</a>
             </div>
 
             {/* WhatsApp Card */}
-            <div className="card glass" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <div className="stitch-card" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '260px' }}>
               <div>
-                <div className="card-icon" style={{ margin: '0 auto 1rem auto', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" style={{ color: '#25D366' }}>
+                <div style={{ fontSize: '2.5rem', marginBottom: '1rem', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <svg viewBox="0 0 24 24" width="38" height="38" fill="currentColor" style={{ color: '#25D366' }}>
                     <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.767 5.766 0 1.267.407 2.454 1.134 3.424l-.741 2.709 2.78-.728c.937.609 2.046.961 3.238.961 3.18 0 5.766-2.586 5.766-5.766s-2.586-5.766-5.766-5.766zm3.326 8.21c-.137.387-.704.707-1.014.757-.272.043-.618.069-1.02-.061-.252-.08-.57-.2-.969-.371-1.698-.732-2.772-2.479-2.857-2.593-.085-.114-.69-.918-.69-1.75 0-.832.435-1.242.59-1.41.15-.168.33-.21.44-.21.11 0 .22 0 .31.004.1.005.23-.039.36.27.135.322.46 1.12.5 1.21.04.09.07.195.01.31-.06.115-.09.185-.18.29-.09.105-.19.235-.27.315-.09.09-.185.19-.08.37.105.18.47.775 1.01 1.258.697.62 1.284.812 1.464.9.18.09.285.075.39-.045.105-.12.45-.525.57-.705.12-.18.24-.15.4-.09.165.06 1.045.495 1.225.585.18.09.3.135.345.21.045.075.045.435-.092.822zM12 2C6.477 2 2 6.477 2 12c0 1.954.562 3.778 1.53 5.32L2.03 22l4.83-.1.1.03C8.42 22.86 10.15 23.3 12 23.3c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 19.3c-1.66 0-3.2-.45-4.52-1.24l-.32-.2-2.85.07.76-2.78-.22-.35A8.25 8.25 0 013.7 12c0-4.58 3.72-8.3 8.3-8.3 4.58 0 8.3 3.72 8.3 8.3 0 4.58-3.72 8.3-8.3 8.3z"/>
                   </svg>
                 </div>
-                <h3>WhatsApp Chat</h3>
-                <p style={{ margin: '1rem 0', fontSize: '0.95rem' }}>+92 308 4737171</p>
+                <h3 className="stitch-font-headline" style={{ fontSize: '1.25rem', color: '#ffffff', margin: '0 0 0.5rem 0' }}>WhatsApp</h3>
+                <p style={{ color: '#c7c4d8', fontSize: '0.85rem', margin: '0 0 1rem 0' }}>+92 308 4737171</p>
               </div>
-              <a href="https://wa.me/923084737171" target="_blank" rel="noreferrer" className="btn btn-primary" style={{ marginTop: 'auto', background: '#25D366', boxShadow: '0 4px 14px rgba(37, 211, 102, 0.3)' }}>Chat Now</a>
+              <a href="https://wa.me/923084737171" target="_blank" rel="noreferrer" className="btn" style={{ textDecoration: 'none', padding: '0.6rem 1.5rem', borderRadius: '9999px', fontSize: '0.85rem', backgroundColor: '#25D366', color: '#ffffff', fontWeight: 'bold', boxShadow: '0 4px 15px rgba(37, 211, 102, 0.2)' }}>Chat Now</a>
             </div>
 
             {/* LinkedIn Card */}
-            <div className="card glass" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <div className="stitch-card" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '260px' }}>
               <div>
-                <div className="card-icon" style={{ margin: '0 auto 1rem auto', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" style={{ color: '#0077B5' }}>
+                <div style={{ fontSize: '2.5rem', marginBottom: '1rem', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <svg viewBox="0 0 24 24" width="38" height="38" fill="currentColor" style={{ color: '#0077B5' }}>
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                   </svg>
                 </div>
-                <h3>LinkedIn Profile</h3>
-                <p style={{ margin: '1rem 0', fontSize: '0.95rem' }}>Connect on LinkedIn</p>
+                <h3 className="stitch-font-headline" style={{ fontSize: '1.25rem', color: '#ffffff', margin: '0 0 0.5rem 0' }}>LinkedIn</h3>
+                <p style={{ color: '#c7c4d8', fontSize: '0.85rem', margin: '0 0 1rem 0' }}>Professional Network</p>
               </div>
-              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="btn btn-primary" style={{ marginTop: 'auto', background: '#0077B5', boxShadow: '0 4px 14px rgba(0, 119, 181, 0.3)' }}>Connect</a>
+              <a href="https://www.linkedin.com/in/zubaidrasool95/" target="_blank" rel="noreferrer" className="btn" style={{ textDecoration: 'none', padding: '0.6rem 1.5rem', borderRadius: '9999px', fontSize: '0.85rem', backgroundColor: '#0077B5', color: '#ffffff', fontWeight: 'bold', boxShadow: '0 4px 15px rgba(0, 119, 181, 0.2)' }}>Connect</a>
             </div>
 
             {/* Instagram Card */}
-            <div className="card glass" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <div className="stitch-card" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '260px' }}>
               <div>
-                <div className="card-icon" style={{ margin: '0 auto 1rem auto', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: '#E1306C' }}>
+                <div style={{ fontSize: '2.5rem', marginBottom: '1rem', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <svg viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: '#E1306C' }}>
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                   </svg>
                 </div>
-                <h3>Instagram</h3>
-                <p style={{ margin: '1rem 0', fontSize: '0.95rem' }}>Follow on Instagram</p>
+                <h3 className="stitch-font-headline" style={{ fontSize: '1.25rem', color: '#ffffff', margin: '0 0 0.5rem 0' }}>Instagram</h3>
+                <p style={{ color: '#c7c4d8', fontSize: '0.85rem', margin: '0 0 1rem 0' }}>Social & Creative Updates</p>
               </div>
-              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="btn btn-primary" style={{ marginTop: 'auto', background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)', boxShadow: '0 4px 14px rgba(220, 39, 67, 0.3)' }}>Follow</a>
+              <a href="https://www.instagram.com/ur_zubi?igsh=NHdpZ2N4bm56d3Rs" target="_blank" rel="noreferrer" className="btn" style={{ textDecoration: 'none', padding: '0.6rem 1.5rem', borderRadius: '9999px', fontSize: '0.85rem', background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)', color: '#ffffff', fontWeight: 'bold', boxShadow: '0 4px 15px rgba(220, 39, 67, 0.2)' }}>Follow</a>
             </div>
           </div>
         </div>
