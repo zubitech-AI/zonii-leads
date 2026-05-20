@@ -24,18 +24,23 @@ export default function DeveloperServicesPage() {
       <div className="ambient-glow-2"></div>
 
       {/* Hero Section */}
-      <section className="relative z-10" style={{ padding: '8rem 0 5rem 0' }}>
-        <div className="container">
-          <div className="grid-2" style={{ alignItems: 'center', gap: '4rem' }}>
+      <section className="relative z-10" style={{ 
+        padding: '5.5rem 0 2rem 0', 
+        minHeight: 'calc(100vh - 80px)', 
+        display: 'flex', 
+        alignItems: 'center' 
+      }}>
+        <div className="container" style={{ width: '100%' }}>
+          <div className="grid-2" style={{ alignItems: 'center', gap: '3rem' }}>
             {/* Left Side Info */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', alignItems: 'flex-start' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'flex-start' }}>
               {/* Availability Badge */}
               <div style={{ 
                 display: 'inline-flex', 
                 alignItems: 'center', 
                 gap: '0.5rem', 
                 backgroundColor: 'var(--stitch-surface-highest)', 
-                padding: '0.5rem 1rem', 
+                padding: '0.4rem 0.8rem', 
                 borderRadius: '9999px',
                 border: '1px solid var(--stitch-border)',
                 transition: 'background-color 0.3s ease, border-color 0.3s ease'
@@ -48,7 +53,7 @@ export default function DeveloperServicesPage() {
                   boxShadow: '0 0 10px var(--stitch-gradient-end)' 
                 }} className="pulse-dot"></div>
                 <span style={{ 
-                  fontSize: '0.75rem', 
+                  fontSize: '0.7rem', 
                   fontWeight: 700, 
                   textTransform: 'uppercase', 
                   letterSpacing: '0.15em', 
@@ -58,8 +63,8 @@ export default function DeveloperServicesPage() {
 
               {/* Headings */}
               <h1 className="stitch-font-headline" style={{ 
-                fontSize: 'clamp(2.5rem, 5vw, 4rem)', 
-                lineHeight: 1.1, 
+                fontSize: 'clamp(2.2rem, 4vw, 3.2rem)', 
+                lineHeight: 1.15, 
                 fontWeight: 900, 
                 letterSpacing: '-0.04em',
                 margin: 0
@@ -68,22 +73,22 @@ export default function DeveloperServicesPage() {
               </h1>
               
               <p style={{ 
-                fontSize: '1.15rem', 
+                fontSize: '1rem', 
                 color: 'var(--stitch-text-secondary)', 
-                lineHeight: 1.6, 
+                lineHeight: 1.5, 
                 margin: 0,
-                maxWidth: '600px',
+                maxWidth: '560px',
                 transition: 'color 0.3s ease'
               }}>
                 Hi, I'm Zubaid Rasool, a Senior AI Research Engineer and Tech Lead at the <strong>National Center of Artificial Intelligence (NCAI), Lahore</strong>. I build premium web applications, native-speed mobile apps, automated DevOps systems, and collaborative multi-agent AI swarms for clients worldwide.
               </p>
 
               {/* CTAs */}
-              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
-                <a href="#contact-dev" className="btn stitch-gradient-btn" style={{ padding: '0.8rem 2rem', borderRadius: '9999px', fontSize: '0.95rem', textDecoration: 'none' }}>
+              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '0.5rem' }}>
+                <a href="#contact-dev" className="btn stitch-gradient-btn" style={{ padding: '0.7rem 1.8rem', borderRadius: '9999px', fontSize: '0.9rem', textDecoration: 'none' }}>
                   Work With Me
                 </a>
-                <a href="#experience-dev" className="btn stitch-ghost-btn" style={{ padding: '0.8rem 2rem', borderRadius: '9999px', fontSize: '0.95rem', textDecoration: 'none' }}>
+                <a href="#experience-dev" className="btn stitch-ghost-btn" style={{ padding: '0.7rem 1.8rem', borderRadius: '9999px', fontSize: '0.9rem', textDecoration: 'none' }}>
                   View My Journey
                 </a>
               </div>
@@ -91,26 +96,26 @@ export default function DeveloperServicesPage() {
               {/* Stats Row */}
               <div style={{ 
                 display: 'flex', 
-                gap: '2rem', 
-                marginTop: '2rem', 
+                gap: '1.5rem', 
+                marginTop: '1.5rem', 
                 borderTop: '1px solid var(--stitch-border)', 
-                paddingTop: '2rem',
+                paddingTop: '1.5rem',
                 width: '100%',
                 transition: 'border-color 0.3s ease'
               }}>
                 <div>
-                  <div className="stitch-font-headline" style={{ fontSize: '2.2rem', fontWeight: 700, color: 'var(--stitch-text)', transition: 'color 0.3s ease' }}>NCAI</div>
-                  <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--stitch-text-secondary)', marginTop: '0.2rem', transition: 'color 0.3s ease' }}>AI Research Lab</div>
+                  <div className="stitch-font-headline" style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--stitch-text)', transition: 'color 0.3s ease' }}>NCAI</div>
+                  <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--stitch-text-secondary)', marginTop: '0.2rem', transition: 'color 0.3s ease' }}>AI Research Lab</div>
                 </div>
                 <div style={{ width: '1px', backgroundColor: 'var(--stitch-border)', transition: 'background-color 0.3s ease' }}></div>
                 <div>
-                  <div className="stitch-font-headline" style={{ fontSize: '2.2rem', fontWeight: 700, color: 'var(--stitch-text)', transition: 'color 0.3s ease' }}>50+</div>
-                  <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--stitch-text-secondary)', marginTop: '0.2rem', transition: 'color 0.3s ease' }}>Global Projects</div>
+                  <div className="stitch-font-headline" style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--stitch-text)', transition: 'color 0.3s ease' }}>50+</div>
+                  <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--stitch-text-secondary)', marginTop: '0.2rem', transition: 'color 0.3s ease' }}>Global Projects</div>
                 </div>
                 <div style={{ width: '1px', backgroundColor: 'var(--stitch-border)', transition: 'background-color 0.3s ease' }}></div>
                 <div>
-                  <div className="stitch-font-headline" style={{ fontSize: '2.2rem', fontWeight: 700, color: 'var(--stitch-text)', transition: 'color 0.3s ease' }}>100%</div>
-                  <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--stitch-text-secondary)', marginTop: '0.2rem', transition: 'color 0.3s ease' }}>SLA Delivery</div>
+                  <div className="stitch-font-headline" style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--stitch-text)', transition: 'color 0.3s ease' }}>100%</div>
+                  <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--stitch-text-secondary)', marginTop: '0.2rem', transition: 'color 0.3s ease' }}>SLA Delivery</div>
                 </div>
               </div>
             </div>
@@ -119,21 +124,21 @@ export default function DeveloperServicesPage() {
             <div className="hide-on-mobile" style={{ display: 'flex', justifyContent: 'center', position: 'relative' }}>
               <div style={{ 
                 position: 'relative', 
-                width: '320px', 
-                height: '320px', 
+                width: '280px', 
+                height: '280px', 
                 borderRadius: '50%', 
                 backgroundColor: 'var(--stitch-surface-low)', 
                 border: '1px solid var(--stitch-border)', 
                 display: 'flex', 
                 alignItems: 'center', 
                 justifyContent: 'center',
-                boxShadow: '0 0 50px var(--stitch-glow-color)',
+                boxShadow: '0 0 40px var(--stitch-glow-color)',
                 transition: 'background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease'
               }}>
                 {/* Central Sphere Image */}
                 <div style={{ 
-                  width: '256px', 
-                  height: '256px', 
+                  width: '210px', 
+                  height: '210px', 
                   borderRadius: '50%', 
                   overflow: 'hidden', 
                   border: '2px solid var(--stitch-surface-high)',
@@ -153,12 +158,12 @@ export default function DeveloperServicesPage() {
                 {/* React */}
                 <div style={{ 
                   position: 'absolute', 
-                  top: '-20px', 
+                  top: '-15px', 
                   left: '50%', 
                   transform: 'translateX(-50%)', 
                   backgroundColor: 'var(--stitch-surface-low)', 
                   border: '1px solid var(--stitch-border)', 
-                  padding: '0.4rem 1.2rem', 
+                  padding: '0.4rem 1rem', 
                   borderRadius: '9999px',
                   display: 'flex',
                   alignItems: 'center',
@@ -167,16 +172,16 @@ export default function DeveloperServicesPage() {
                   boxShadow: '0 4px 15px rgba(0, 0, 0, 0.08)',
                   transition: 'background-color 0.3s ease, border-color 0.3s ease'
                 }}>
-                  <span style={{ color: 'var(--stitch-gradient-start)', fontSize: '0.75rem', fontWeight: 'bold' }}>React / Next</span>
+                  <span style={{ color: 'var(--stitch-gradient-start)', fontSize: '0.7rem', fontWeight: 'bold' }}>React / Next</span>
                 </div>
                 {/* Flutter */}
                 <div style={{ 
                   position: 'absolute', 
-                  top: '80px', 
-                  right: '-40px', 
+                  top: '70px', 
+                  right: '-35px', 
                   backgroundColor: 'var(--stitch-surface-low)', 
                   border: '1px solid var(--stitch-border)', 
-                  padding: '0.4rem 1.2rem', 
+                  padding: '0.4rem 1rem', 
                   borderRadius: '9999px',
                   display: 'flex',
                   alignItems: 'center',
@@ -185,16 +190,16 @@ export default function DeveloperServicesPage() {
                   boxShadow: '0 4px 15px rgba(0, 0, 0, 0.08)',
                   transition: 'background-color 0.3s ease, border-color 0.3s ease'
                 }}>
-                  <span style={{ color: 'var(--stitch-gradient-start)', fontSize: '0.75rem', fontWeight: 'bold' }}>Flutter</span>
+                  <span style={{ color: 'var(--stitch-gradient-start)', fontSize: '0.7rem', fontWeight: 'bold' }}>Flutter</span>
                 </div>
                 {/* AWS */}
                 <div style={{ 
                   position: 'absolute', 
-                  bottom: '60px', 
-                  right: '-20px', 
+                  bottom: '50px', 
+                  right: '-15px', 
                   backgroundColor: 'var(--stitch-surface-low)', 
                   border: '1px solid var(--stitch-border)', 
-                  padding: '0.4rem 1.2rem', 
+                  padding: '0.4rem 1rem', 
                   borderRadius: '9999px',
                   display: 'flex',
                   alignItems: 'center',
@@ -203,17 +208,17 @@ export default function DeveloperServicesPage() {
                   boxShadow: '0 4px 15px rgba(0, 0, 0, 0.08)',
                   transition: 'background-color 0.3s ease, border-color 0.3s ease'
                 }}>
-                  <span style={{ color: 'var(--stitch-gradient-end)', fontSize: '0.75rem', fontWeight: 'bold' }}>AWS / DevOps</span>
+                  <span style={{ color: 'var(--stitch-gradient-end)', fontSize: '0.7rem', fontWeight: 'bold' }}>AWS / DevOps</span>
                 </div>
                 {/* Python */}
                 <div style={{ 
                   position: 'absolute', 
-                  bottom: '-20px', 
+                  bottom: '-15px', 
                   left: '50%', 
                   transform: 'translateX(-50%)', 
                   backgroundColor: 'var(--stitch-surface-low)', 
                   border: '1px solid var(--stitch-border)', 
-                  padding: '0.4rem 1.2rem', 
+                  padding: '0.4rem 1rem', 
                   borderRadius: '9999px',
                   display: 'flex',
                   alignItems: 'center',
@@ -222,16 +227,16 @@ export default function DeveloperServicesPage() {
                   boxShadow: '0 4px 15px rgba(0, 0, 0, 0.08)',
                   transition: 'background-color 0.3s ease, border-color 0.3s ease'
                 }}>
-                  <span style={{ color: 'var(--stitch-gradient-end)', fontSize: '0.75rem', fontWeight: 'bold' }}>Python / PyTorch</span>
+                  <span style={{ color: 'var(--stitch-gradient-end)', fontSize: '0.7rem', fontWeight: 'bold' }}>Python / PyTorch</span>
                 </div>
                 {/* Docker */}
                 <div style={{ 
                   position: 'absolute', 
-                  top: '120px', 
-                  left: '-50px', 
+                  top: '110px', 
+                  left: '-45px', 
                   backgroundColor: 'var(--stitch-surface-low)', 
                   border: '1px solid var(--stitch-border)', 
-                  padding: '0.4rem 1.2rem', 
+                  padding: '0.4rem 1rem', 
                   borderRadius: '9999px',
                   display: 'flex',
                   alignItems: 'center',
@@ -240,7 +245,7 @@ export default function DeveloperServicesPage() {
                   boxShadow: '0 4px 15px rgba(0, 0, 0, 0.08)',
                   transition: 'background-color 0.3s ease, border-color 0.3s ease'
                 }}>
-                  <span style={{ color: 'var(--stitch-gradient-start)', fontSize: '0.75rem', fontWeight: 'bold' }}>Docker / K8s</span>
+                  <span style={{ color: 'var(--stitch-gradient-start)', fontSize: '0.7rem', fontWeight: 'bold' }}>Docker / K8s</span>
                 </div>
               </div>
             </div>
