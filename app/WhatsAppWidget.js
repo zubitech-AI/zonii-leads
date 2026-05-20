@@ -1,10 +1,14 @@
 "use client"
 
 import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 
 export default function WhatsAppWidget() {
   const [showBubble, setShowBubble] = useState(false)
   const [isDismissed, setIsDismissed] = useState(false)
+  const pathname = usePathname()
+
+  const isDevServices = pathname === '/developer-services'
 
   useEffect(() => {
     // Check if user previously closed the greeting bubble in this session
@@ -30,8 +34,13 @@ export default function WhatsAppWidget() {
     sessionStorage.setItem('whatsapp_bubble_dismissed', 'true')
   }
 
-  const whatsappNumber = '447458979941'
+  const whatsappNumber = isDevServices ? '923084737171' : '447458979941'
   const whatsappUrl = `https://wa.me/${whatsappNumber}`
+  const avatarLetter = isDevServices ? 'Z' : 'S'
+  const nameLabel = isDevServices ? 'ZubiTech Development' : 'Saqlain (Zonii Leads)'
+  const greetingText = isDevServices
+    ? "Hey! 👋 Let's build your next web/mobile app, automate DevOps, or deploy Agentic AI. Chat with me directly!"
+    : "Hey! 👋 Looking to boost your search authority with tier-1 backlinks? Chat with me directly for a custom strategy proposal."
 
   return (
     <>
@@ -39,11 +48,11 @@ export default function WhatsAppWidget() {
       <div className={`whatsapp-chat-bubble ${showBubble && !isDismissed ? 'show' : ''}`}>
         <div className="whatsapp-chat-header">
           <div className="whatsapp-chat-avatar">
-            S
+            {avatarLetter}
             <span className="whatsapp-chat-status-dot"></span>
           </div>
           <div className="whatsapp-chat-info">
-            <span className="whatsapp-chat-name">Saqlain (Zonii Leads)</span>
+            <span className="whatsapp-chat-name">{nameLabel}</span>
             <span className="whatsapp-chat-status">Online</span>
           </div>
           <button 
@@ -55,7 +64,7 @@ export default function WhatsAppWidget() {
           </button>
         </div>
         <div className="whatsapp-chat-body">
-          Hey! 👋 Looking to boost your search authority with tier-1 backlinks? Chat with me directly for a custom strategy proposal.
+          {greetingText}
         </div>
         <a 
           href={whatsappUrl} 
