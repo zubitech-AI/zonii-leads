@@ -34,12 +34,12 @@ export default function WhatsAppWidget() {
     sessionStorage.setItem('whatsapp_bubble_dismissed', 'true')
   }
 
-  const whatsappNumber = isDevServices ? '923084737171' : '447458979941'
+  const whatsappNumber = '447458979941'
   const whatsappUrl = `https://wa.me/${whatsappNumber}`
   const avatarLetter = isDevServices ? 'Z' : 'S'
-  const nameLabel = isDevServices ? 'ZubiTech Development' : 'Saqlain (Zonii Leads)'
+  const nameLabel = isDevServices ? 'Zonii Leads' : 'Saqlain (Zonii Leads)'
   const greetingText = isDevServices
-    ? "Hey! 👋 Let's build your next web/mobile app, automate DevOps, or deploy Agentic AI. Chat with me directly!"
+    ? "Hey! 👋 Let's build your next web/mobile app, automate DevOps, or deploy Agentic AI. Chat with us directly!"
     : "Hey! 👋 Looking to boost your search authority with tier-1 backlinks? Chat with me directly for a custom strategy proposal."
 
   return (

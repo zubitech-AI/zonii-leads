@@ -7,9 +7,9 @@ export default function Footer() {
   const pathname = usePathname()
   const isDevServices = pathname === '/developer-services'
 
-  const email = isDevServices ? 'zubitech906@gmail.com' : 'info@zoniileads.com'
-  const whatsappNumber = isDevServices ? '923084737171' : '447458979941'
-  const whatsappLabel = isDevServices ? '+92 308 4737171' : '+44 7458 979941'
+  const email = 'info@zoniileads.com'
+  const whatsappNumber = '447458979941'
+  const whatsappLabel = '+44 7458 979941'
 
   return (
     <footer className="footer">

@@ -20,8 +20,8 @@ export default function Navbar() {
 
   const isDevServices = pathname === '/developer-services'
 
-  const whatsappNumber = isDevServices ? '923084737171' : '447458979941'
-  const whatsappLabel = isDevServices ? '+92 308 4737171' : '+44 7458 979941'
+  const whatsappNumber = '447458979941'
+  const whatsappLabel = '+44 7458 979941'
   const ctaLink = isDevServices ? '#contact-dev' : '/contact'
   const ctaLabel = isDevServices ? 'Work With Me' : 'Book a Strategy Call'
 

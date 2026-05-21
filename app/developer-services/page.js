@@ -579,9 +579,9 @@ export default function DeveloperServicesPage() {
               <div>
                 <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>✉️</div>
                 <h3 className="stitch-font-headline" style={{ fontSize: '1.25rem', color: 'var(--stitch-text)', margin: '0 0 0.5rem 0' }}>Email</h3>
-                <p style={{ color: 'var(--stitch-text-secondary)', fontSize: '0.85rem', wordBreak: 'break-all', margin: '0 0 1rem 0' }}>zubitech906@gmail.com</p>
+                <p style={{ color: 'var(--stitch-text-secondary)', fontSize: '0.85rem', wordBreak: 'break-all', margin: '0 0 1rem 0' }}>info@zoniileads.com</p>
               </div>
-              <a href="mailto:zubitech906@gmail.com" className="btn stitch-gradient-btn" style={{ textDecoration: 'none', padding: '0.6rem 1.5rem', borderRadius: '9999px', fontSize: '0.85rem' }}>Send Email</a>
+              <a href="mailto:info@zoniileads.com" className="btn stitch-gradient-btn" style={{ textDecoration: 'none', padding: '0.6rem 1.5rem', borderRadius: '9999px', fontSize: '0.85rem' }}>Send Email</a>
             </div>
 
             {/* WhatsApp Card */}
@@ -593,9 +593,9 @@ export default function DeveloperServicesPage() {
                   </svg>
                 </div>
                 <h3 className="stitch-font-headline" style={{ fontSize: '1.25rem', color: 'var(--stitch-text)', margin: '0 0 0.5rem 0' }}>WhatsApp</h3>
-                <p style={{ color: 'var(--stitch-text-secondary)', fontSize: '0.85rem', margin: '0 0 1rem 0' }}>+92 308 4737171</p>
+                <p style={{ color: 'var(--stitch-text-secondary)', fontSize: '0.85rem', margin: '0 0 1rem 0' }}>+44 7458 979941</p>
               </div>
-              <a href="https://wa.me/923084737171" target="_blank" rel="noreferrer" className="btn" style={{ textDecoration: 'none', padding: '0.6rem 1.5rem', borderRadius: '9999px', fontSize: '0.85rem', backgroundColor: '#25D366', color: '#ffffff', fontWeight: 'bold', boxShadow: '0 4px 15px rgba(37, 211, 102, 0.2)' }}>Chat Now</a>
+              <a href="https://wa.me/447458979941" target="_blank" rel="noreferrer" className="btn" style={{ textDecoration: 'none', padding: '0.6rem 1.5rem', borderRadius: '9999px', fontSize: '0.85rem', backgroundColor: '#25D366', color: '#ffffff', fontWeight: 'bold', boxShadow: '0 4px 15px rgba(37, 211, 102, 0.2)' }}>Chat Now</a>
             </div>
 
             {/* LinkedIn Card */}
