@@ -609,23 +609,21 @@ export default function DeveloperServicesPage() {
                 <h3 className="stitch-font-headline" style={{ fontSize: '1.25rem', color: 'var(--stitch-text)', margin: '0 0 0.5rem 0' }}>LinkedIn</h3>
                 <p style={{ color: 'var(--stitch-text-secondary)', fontSize: '0.85rem', margin: '0 0 1rem 0' }}>Professional Network</p>
               </div>
-              <a href="https://www.linkedin.com/in/zubaidrasool95/" target="_blank" rel="noreferrer" className="btn" style={{ textDecoration: 'none', padding: '0.6rem 1.5rem', borderRadius: '9999px', fontSize: '0.85rem', backgroundColor: '#0077B5', color: '#ffffff', fontWeight: 'bold', boxShadow: '0 4px 15px rgba(0, 119, 181, 0.2)' }}>Connect</a>
+              <a href="https://www.linkedin.com/in/dxbsaqlain405?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" className="btn" style={{ textDecoration: 'none', padding: '0.6rem 1.5rem', borderRadius: '9999px', fontSize: '0.85rem', backgroundColor: '#0077B5', color: '#ffffff', fontWeight: 'bold', boxShadow: '0 4px 15px rgba(0, 119, 181, 0.2)' }}>Connect</a>
             </div>
 
-            {/* Instagram Card */}
+            {/* Facebook Card */}
             <div className="stitch-card" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '260px' }}>
               <div>
                 <div style={{ fontSize: '2.5rem', marginBottom: '1rem', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <svg viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: '#E1306C' }}>
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  <svg viewBox="0 0 24 24" width="38" height="38" fill="currentColor" style={{ color: '#1877F2' }}>
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                   </svg>
                 </div>
-                <h3 className="stitch-font-headline" style={{ fontSize: '1.25rem', color: 'var(--stitch-text)', margin: '0 0 0.5rem 0' }}>Instagram</h3>
-                <p style={{ color: 'var(--stitch-text-secondary)', fontSize: '0.85rem', margin: '0 0 1rem 0' }}>Social & Creative Updates</p>
+                <h3 className="stitch-font-headline" style={{ fontSize: '1.25rem', color: 'var(--stitch-text)', margin: '0 0 0.5rem 0' }}>Facebook</h3>
+                <p style={{ color: 'var(--stitch-text-secondary)', fontSize: '0.85rem', margin: '0 0 1rem 0' }}>Official Page & Updates</p>
               </div>
-              <a href="https://www.instagram.com/ur_zubi?igsh=NHdpZ2N4bm56d3Rs" target="_blank" rel="noreferrer" className="btn" style={{ textDecoration: 'none', padding: '0.6rem 1.5rem', borderRadius: '9999px', fontSize: '0.85rem', background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)', color: '#ffffff', fontWeight: 'bold', boxShadow: '0 4px 15px rgba(220, 39, 67, 0.2)' }}>Follow</a>
+              <a href="https://www.facebook.com/DxbSqlnch0" target="_blank" rel="noreferrer" className="btn" style={{ textDecoration: 'none', padding: '0.6rem 1.5rem', borderRadius: '9999px', fontSize: '0.85rem', backgroundColor: '#1877F2', color: '#ffffff', fontWeight: 'bold', boxShadow: '0 4px 15px rgba(24, 119, 242, 0.2)' }}>Connect</a>
             </div>
           </div>
         </div>
